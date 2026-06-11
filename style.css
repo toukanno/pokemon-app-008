@@ -1,356 +1,635 @@
-/* ファイアレッド(GBA)風テーマ */
+/* ファイアレッド(GBA)風ゲーム */
 :root {
   --fr-red: #d8453e;
   --fr-red-dark: #a02822;
   --fr-orange: #f0a060;
-  --fr-bg: #282828;
-  --fr-panel: #383838;
-  --fr-panel-light: #484848;
-  --fr-text: #f8f8f8;
-  --fr-text-dim: #b0b0b0;
   --fr-border: #181818;
-  --radius: 4px;
+  --fr-panel: #f8f8f0;
+  --tile: 24px;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  height: 100%;
+}
+
+body {
   font-family: "DotGothic16", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-  background: var(--fr-bg);
+  background: #282828;
   background-image: repeating-linear-gradient(
     0deg,
     transparent 0 2px,
-    rgba(0, 0, 0, 0.08) 2px 4px
+    rgba(0, 0, 0, 0.1) 2px 4px
   );
-  color: var(--fr-text);
+  color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-/* ---------- GBA風ウィンドウ枠 ---------- */
-.gba-frame,
-.card,
-.modal-card,
-.search-box input {
-  border: 3px solid var(--fr-border);
+#gba-shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* ---------- ゲーム画面 ---------- */
+#gba-screen {
+  position: relative;
+  width: calc(var(--tile) * 20);
+  height: calc(var(--tile) * 15);
+  background: #000;
+  border: 4px solid var(--fr-border);
   box-shadow:
-    inset 0 0 0 2px #686868,
-    inset 0 0 0 4px var(--fr-border);
-}
-
-/* ---------- ヘッダー ---------- */
-.header {
-  background: linear-gradient(to bottom, var(--fr-red) 0 60%, var(--fr-red-dark) 60% 100%);
-  border-bottom: 4px solid var(--fr-border);
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.header-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.logo {
-  font-size: 1.3rem;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  white-space: nowrap;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
-}
-
-.version-tag {
-  font-size: 0.7rem;
-  background: var(--fr-orange);
-  color: #402000;
-  padding: 3px 8px;
-  border: 2px solid var(--fr-border);
-  text-shadow: none;
-}
-
-.pokeball {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, #fff 0 45%, #333 45% 55%, #f00 55% 100%);
-  transform: rotate(180deg);
-  border: 2px solid #333;
-  position: relative;
-  display: inline-block;
-}
-
-.pokeball::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  border: 2px solid #333;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.search-box {
-  flex: 1;
-  min-width: 220px;
-}
-
-.search-box input {
-  width: 100%;
-  padding: 8px 12px;
-  font-size: 1rem;
-  font-family: inherit;
-  outline: none;
-  background: #f8f8f0;
-  color: #282828;
-  border-radius: 0;
-}
-
-/* ---------- グリッド ---------- */
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 16px 60px;
-}
-
-.status {
-  text-align: center;
-  padding: 40px 0;
-  font-size: 1.05rem;
-  color: var(--fr-text-dim);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 14px;
-}
-
-.card {
-  background: var(--fr-panel);
-  padding: 12px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.1s ease;
-  color: var(--fr-text);
-  font-family: inherit;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  background: var(--fr-panel-light);
-}
-
-.card img {
-  width: 96px;
-  height: 96px;
+    0 0 0 4px #484848,
+    0 0 0 8px var(--fr-border),
+    0 12px 30px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
   image-rendering: pixelated;
 }
 
-.card .no {
-  color: var(--fr-orange);
-  font-size: 0.8rem;
-  margin: 0;
-}
-
-.card .name {
-  font-weight: 700;
-  margin: 4px 0 8px;
-  font-size: 1rem;
-}
-
-/* ---------- タイプバッジ ---------- */
-.types {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.type-badge {
-  font-size: 0.72rem;
-  color: #fff;
-  padding: 2px 8px;
-  border: 2px solid var(--fr-border);
-  font-weight: 600;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-}
-
-.type-normal { background: #a8a878; }
-.type-fire { background: #f08030; }
-.type-water { background: #6890f0; }
-.type-grass { background: #78c850; }
-.type-electric { background: #f8b820; }
-.type-ice { background: #98d8d8; }
-.type-fighting { background: #c03028; }
-.type-poison { background: #a040a0; }
-.type-ground { background: #e0c068; }
-.type-flying { background: #a890f0; }
-.type-psychic { background: #f85888; }
-.type-bug { background: #a8b820; }
-.type-rock { background: #b8a038; }
-.type-ghost { background: #705898; }
-.type-dragon { background: #7038f8; }
-.type-dark { background: #705848; }
-.type-steel { background: #b8b8d0; }
-.type-fairy { background: #ee99ac; }
-
-/* ---------- モーダル ---------- */
-.modal {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-
-.modal-backdrop {
+.screen {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
 }
 
-.modal-card {
-  position: relative;
-  background: var(--fr-panel);
-  max-width: 480px;
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  padding: 24px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  border: none;
-  background: none;
-  font-size: 1.6rem;
-  cursor: pointer;
-  color: var(--fr-text-dim);
-  line-height: 1;
+/* ---------- 共通ボタン ---------- */
+.gba-btn {
   font-family: inherit;
-}
-
-.detail-header {
-  text-align: center;
-}
-
-.detail-header img {
-  width: 160px;
-  height: 160px;
-  image-rendering: pixelated;
-  background: var(--fr-panel-light);
-  border: 3px solid var(--fr-border);
-}
-
-.detail-header .no {
-  color: var(--fr-orange);
-  margin: 8px 0 0;
-}
-
-.detail-header h2 {
-  margin: 4px 0 2px;
-}
-
-.detail-header .genus {
-  color: var(--fr-text-dim);
-  margin: 0 0 10px;
-  font-size: 0.9rem;
-}
-
-.flavor {
-  background: #f8f8f0;
+  font-size: 0.95rem;
+  background: var(--fr-panel);
   color: #282828;
   border: 3px solid var(--fr-border);
   box-shadow: inset 0 0 0 2px #686868;
-  padding: 12px 14px;
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin: 14px 0;
+  padding: 8px 14px;
+  cursor: pointer;
 }
 
-.meta {
+.gba-btn:hover {
+  background: #fff8d8;
+}
+
+.gba-btn.small {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+}
+
+/* ---------- タイトル ---------- */
+#screen-title {
+  background: linear-gradient(to bottom, var(--fr-red) 0 65%, var(--fr-red-dark) 65% 100%);
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin: 10px 0 16px;
-  color: var(--fr-text-dim);
-  font-size: 0.9rem;
-  flex-wrap: wrap;
-}
-
-.meta strong {
-  display: block;
-  color: var(--fr-text);
-  font-size: 1.05rem;
-}
-
-/* ---------- ステータスバー ---------- */
-.stats h3 {
-  font-size: 1rem;
-  margin: 0 0 10px;
-  border-left: 6px solid var(--fr-red);
-  padding-left: 8px;
-}
-
-.stat-row {
-  display: grid;
-  grid-template-columns: 90px 36px 1fr;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  margin-bottom: 7px;
-  font-size: 0.85rem;
+  text-align: center;
 }
 
-.stat-row .val {
-  text-align: right;
+.title-small {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.title-logo {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffd840;
+  text-shadow:
+    3px 3px 0 var(--fr-border),
+    -2px -2px 0 var(--fr-border),
+    2px -2px 0 var(--fr-border),
+    -2px 2px 0 var(--fr-border);
+}
+
+.title-fu {
+  font-size: 1rem;
+  vertical-align: super;
+}
+
+.title-mon {
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+  filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.3));
+}
+
+.title-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.title-credit {
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+  margin: 0;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- 御三家選択 ---------- */
+#screen-starter {
+  background: #305848;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.starter-heading {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.starter-cards {
+  display: flex;
+  gap: 12px;
+}
+
+.starter-card {
+  font-family: inherit;
+  background: var(--fr-panel);
+  color: #282828;
+  border: 3px solid var(--fr-border);
+  box-shadow: inset 0 0 0 2px #686868;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 130px;
+}
+
+.starter-card:hover {
+  background: #fff8d8;
+  transform: translateY(-3px);
+}
+
+.starter-card img {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+}
+
+.starter-card .s-name {
   font-weight: 700;
+  margin: 4px 0 2px;
 }
 
-.stat-bar {
-  background: var(--fr-border);
-  height: 12px;
-  overflow: hidden;
+.starter-card .s-type {
+  font-size: 0.75rem;
+  color: #686868;
+}
+
+/* ---------- フィールド ---------- */
+#screen-world {
+  background: #88c070;
+}
+
+#map-viewport {
+  position: absolute;
+  inset: 0;
+}
+
+#map {
+  display: grid;
+  grid-template-columns: repeat(20, var(--tile));
+}
+
+.tile {
+  width: var(--tile);
+  height: var(--tile);
+}
+
+.tile.path {
+  background: #e0d0a0;
+  background-image: radial-gradient(circle at 30% 40%, #d4c08c 2px, transparent 2px);
+}
+
+.tile.grass {
+  background: #70b858;
+  background-image:
+    linear-gradient(135deg, transparent 0 60%, #509840 60% 70%, transparent 70%),
+    linear-gradient(45deg, transparent 0 30%, #509840 30% 40%, transparent 40%);
+}
+
+.tile.tall {
+  background: #408838;
+  background-image:
+    linear-gradient(135deg, transparent 0 50%, #286828 50% 65%, transparent 65%),
+    linear-gradient(45deg, transparent 0 25%, #286828 25% 40%, transparent 40%);
+}
+
+.tile.tree {
+  background: #306030;
+  background-image:
+    radial-gradient(circle at 50% 35%, #408840 38%, transparent 40%),
+    linear-gradient(to bottom, transparent 0 65%, #604020 65% 100%);
+}
+
+.tile.water {
+  background: #5888e8;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0 30%,
+    #78a0f0 30% 40%,
+    transparent 40% 70%,
+    #78a0f0 70% 80%,
+    transparent 80%
+  );
+}
+
+.tile.center {
+  background: #e85048;
+  background-image:
+    linear-gradient(to bottom, #f8f8f0 35%, transparent 35%),
+    radial-gradient(circle at 50% 70%, #f8f8f0 25%, transparent 27%);
+}
+
+.tile.flower {
+  background: #e0d0a0;
+  background-image:
+    radial-gradient(circle at 50% 50%, #f05868 18%, transparent 20%),
+    radial-gradient(circle at 50% 50%, #f8d048 8%, transparent 10%);
+}
+
+/* プレイヤー（CSSドット絵風） */
+#player {
+  position: absolute;
+  width: var(--tile);
+  height: var(--tile);
+  transition: left 0.12s linear, top 0.12s linear;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#player::before {
+  /* 帽子と顔 */
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 8%;
+  width: 50%;
+  height: 42%;
+  background: linear-gradient(to bottom, var(--fr-red) 0 45%, #f8d8b0 45% 100%);
   border: 2px solid var(--fr-border);
 }
 
-.stat-bar span {
+#player::after {
+  /* からだ */
+  content: "";
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: 40%;
+  height: 42%;
+  background: #3858a8;
+  border: 2px solid var(--fr-border);
+}
+
+.world-ui {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 3;
+}
+
+/* ---------- バトル ---------- */
+#screen-battle {
+  background: linear-gradient(to bottom, #a8d8f0 0 62%, #88c070 62% 100%);
+}
+
+.battle-field {
+  position: absolute;
+  inset: 0;
+}
+
+#enemy-sprite {
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  width: 120px;
+  height: 120px;
+  image-rendering: pixelated;
+}
+
+#ally-sprite {
+  position: absolute;
+  left: 6%;
+  bottom: 26%;
+  width: 130px;
+  height: 130px;
+  image-rendering: pixelated;
+}
+
+.info-box {
+  position: absolute;
+  background: var(--fr-panel);
+  color: #282828;
+  border: 3px solid var(--fr-border);
+  box-shadow: inset 0 0 0 2px #686868;
+  padding: 6px 10px;
+  min-width: 170px;
+  z-index: 2;
+}
+
+.enemy-info {
+  left: 4%;
+  top: 6%;
+}
+
+.ally-info {
+  right: 4%;
+  bottom: 28%;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hp-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.hp-label {
+  font-size: 0.6rem;
+  color: var(--fr-orange);
+  font-weight: 700;
+}
+
+.hp-bar {
+  flex: 1;
+  height: 8px;
+  background: #585858;
+  border: 2px solid var(--fr-border);
+}
+
+.hp-bar span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, var(--fr-orange), var(--fr-red));
-  transition: width 0.4s ease;
+  width: 100%;
+  background: #58c838;
+  transition: width 0.5s ease;
 }
 
-/* ---------- フッター ---------- */
-.footer {
-  text-align: center;
-  padding: 20px;
-  color: var(--fr-text-dim);
+.hp-bar span.mid {
+  background: #f8b820;
+}
+
+.hp-bar span.low {
+  background: #e85048;
+}
+
+.hp-text {
+  text-align: right;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+/* バトルメニュー */
+.battle-menu {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  z-index: 12; /* 行動選択中はメッセージボックスより手前に出す */
+  background: var(--fr-border);
+  padding: 4px;
+}
+
+.battle-menu .gba-btn {
   font-size: 0.85rem;
+  padding: 6px 10px;
+  min-width: 110px;
 }
 
-.footer a {
-  color: var(--fr-orange);
+.battle-menu .gba-btn:disabled {
+  color: #a0a0a0;
+  cursor: not-allowed;
 }
 
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+.battle-menu .pp {
+  display: block;
+  font-size: 0.65rem;
+  color: #686868;
+}
+
+/* ---------- パーティ ---------- */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #305848;
+  z-index: 14; /* メッセージボックスより手前 */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+}
+
+.party-heading {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.party-row {
+  font-family: inherit;
+  display: grid;
+  grid-template-columns: 48px 1fr 90px;
+  align-items: center;
+  gap: 8px;
+  background: var(--fr-panel);
+  color: #282828;
+  border: 3px solid var(--fr-border);
+  box-shadow: inset 0 0 0 2px #686868;
+  padding: 4px 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.party-row:hover {
+  background: #fff8d8;
+}
+
+.party-row.fainted {
+  opacity: 0.55;
+}
+
+.party-row img {
+  width: 44px;
+  height: 44px;
+  image-rendering: pixelated;
+}
+
+.party-row .p-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.party-row .p-moves {
+  font-size: 0.65rem;
+  color: #686868;
+}
+
+.party-row .p-hp {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.party-row .hp-bar {
+  height: 6px;
+  margin-bottom: 2px;
+}
+
+#btn-party-close {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* ---------- メッセージボックス ---------- */
+#msgbox {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  min-height: 64px;
+  background: var(--fr-panel);
+  color: #282828;
+  border: 3px solid var(--fr-border);
+  box-shadow: inset 0 0 0 2px #6890f0;
+  padding: 8px 12px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#msg-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+#msg-indicator {
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  color: var(--fr-red);
+  animation: bounce 0.6s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(3px); }
+}
+
+/* ---------- ローディング ---------- */
+#loading {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  font-size: 1.4rem;
+  letter-spacing: 0.3em;
+}
+
+/* ---------- 操作パッド ---------- */
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 36px);
+  grid-template-rows: repeat(3, 36px);
+}
+
+.dpad-btn {
+  font-family: inherit;
+  background: #383838;
+  color: #b0b0b0;
+  border: 2px solid var(--fr-border);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.dpad-btn:active {
+  background: #585858;
+}
+
+.dpad-btn.up { grid-area: 1 / 2; }
+.dpad-btn.left { grid-area: 2 / 1; }
+.dpad-btn.right { grid-area: 2 / 3; }
+.dpad-btn.down { grid-area: 3 / 2; }
+
+.control-hint {
+  font-size: 0.7rem;
+  color: #888;
+  line-height: 1.7;
+}
+
+.ab-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--fr-red);
+  color: #fff;
+  border: 3px solid var(--fr-border);
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ab-btn:active {
+  background: var(--fr-red-dark);
+}
+
+/* ---------- レスポンシブ ---------- */
+@media (max-width: 520px) {
+  :root {
+    --tile: calc((100vw - 36px) / 20);
+  }
+
+  .battle-menu .gba-btn {
+    min-width: 84px;
+    font-size: 0.75rem;
+  }
+
+  .info-box {
+    min-width: 130px;
+  }
+
+  #enemy-sprite,
+  #ally-sprite {
+    width: 90px;
+    height: 90px;
+  }
+
+  .control-hint {
+    display: none;
   }
 }
