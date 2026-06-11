@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポケモン図鑑 | PokeAPI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">
+        <span class="pokeball" aria-hidden="true"></span>
+        ポケモン図鑑
+      </h1>
+      <div class="search-box">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="名前・番号で検索（例: ピカチュウ, 25）"
+          autocomplete="off"
+        />
+      </div>
+      <div class="gen-select-box">
+        <select id="gen-select" aria-label="世代を選択">
+          <option value="1">第1世代 (カントー)</option>
+          <option value="2">第2世代 (ジョウト)</option>
+          <option value="3">第3世代 (ホウエン)</option>
+          <option value="4">第4世代 (シンオウ)</option>
+          <option value="5">第5世代 (イッシュ)</option>
+          <option value="6">第6世代 (カロス)</option>
+          <option value="7">第7世代 (アローラ)</option>
+          <option value="8">第8世代 (ガラル)</option>
+          <option value="9">第9世代 (パルデア)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="status" class="status" hidden></div>
+    <div id="pokemon-grid" class="grid" aria-live="polite"></div>
+  </main>
+
+  <!-- 詳細モーダル -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="閉じる">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    データ提供: <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokeAPI</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
