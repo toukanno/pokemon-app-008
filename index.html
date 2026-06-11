@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ポケモン図鑑 ファイアレッド | PokeAPI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>ポケットモンスター ファイアレッド風ゲーム</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -13,42 +13,108 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <h1 class="logo">
-        <span class="pokeball" aria-hidden="true"></span>
-        ポケモンずかん
-        <span class="version-tag">ファイアレッド</span>
-      </h1>
-      <div class="search-box">
-        <input
-          type="search"
-          id="search-input"
-          placeholder="なまえ・ばんごうで さがす"
-          autocomplete="off"
+  <div id="gba-shell">
+    <div id="gba-screen">
+      <!-- タイトル画面 -->
+      <section id="screen-title" class="screen">
+        <p class="title-small">ポケットモンスター</p>
+        <h1 class="title-logo">ファイアレッド<span class="title-fu">風</span></h1>
+        <img
+          class="title-mon"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/6.png"
+          alt="リザードン"
         />
+        <div class="title-buttons">
+          <button id="btn-new" class="gba-btn">さいしょから</button>
+          <button id="btn-continue" class="gba-btn" hidden>つづきから</button>
+        </div>
+        <p class="title-credit">データ: PokeAPI ｜ ファンメイドの非公式ミニゲーム</p>
+      </section>
+
+      <!-- 御三家選択 -->
+      <section id="screen-starter" class="screen" hidden>
+        <h2 class="starter-heading">どの ポケモンに する？</h2>
+        <div id="starter-cards" class="starter-cards"></div>
+      </section>
+
+      <!-- フィールド -->
+      <section id="screen-world" class="screen" hidden>
+        <div id="map-viewport">
+          <div id="map"></div>
+          <div id="player"></div>
+        </div>
+        <div class="world-ui">
+          <button id="btn-party" class="gba-btn small">ポケモン</button>
+        </div>
+      </section>
+
+      <!-- バトル -->
+      <section id="screen-battle" class="screen" hidden>
+        <div class="battle-field">
+          <div class="info-box enemy-info">
+            <div class="info-row">
+              <span id="enemy-name"></span><span id="enemy-level"></span>
+            </div>
+            <div class="hp-line">
+              <span class="hp-label">HP</span>
+              <div class="hp-bar"><span id="enemy-hp-fill"></span></div>
+            </div>
+          </div>
+          <img id="enemy-sprite" alt="" />
+          <img id="ally-sprite" alt="" />
+          <div class="info-box ally-info">
+            <div class="info-row">
+              <span id="ally-name"></span><span id="ally-level"></span>
+            </div>
+            <div class="hp-line">
+              <span class="hp-label">HP</span>
+              <div class="hp-bar"><span id="ally-hp-fill"></span></div>
+            </div>
+            <div id="ally-hp-text" class="hp-text"></div>
+          </div>
+        </div>
+        <div id="action-menu" class="battle-menu" hidden>
+          <button class="gba-btn" data-action="fight">たたかう</button>
+          <button class="gba-btn" data-action="bag">バッグ</button>
+          <button class="gba-btn" data-action="pokemon">ポケモン</button>
+          <button class="gba-btn" data-action="run">にげる</button>
+        </div>
+        <div id="move-menu" class="battle-menu" hidden></div>
+        <div id="bag-menu" class="battle-menu" hidden></div>
+      </section>
+
+      <!-- パーティ画面 -->
+      <section id="overlay-party" class="overlay" hidden>
+        <h2 class="party-heading">ポケモン</h2>
+        <div id="party-list"></div>
+        <button id="btn-party-close" class="gba-btn">とじる</button>
+      </section>
+
+      <!-- メッセージボックス（共通） -->
+      <div id="msgbox" hidden>
+        <p id="msg-text"></p>
+        <span id="msg-indicator" hidden>▼</span>
       </div>
+
+      <!-- ローディング -->
+      <div id="loading" hidden><span>・・・</span></div>
     </div>
-  </header>
 
-  <main>
-    <div id="status" class="status" hidden></div>
-    <div id="pokemon-grid" class="grid" aria-live="polite"></div>
-  </main>
-
-  <!-- 詳細モーダル -->
-  <div id="modal" class="modal" hidden>
-    <div class="modal-backdrop" data-close></div>
-    <div class="modal-card" role="dialog" aria-modal="true">
-      <button class="modal-close" data-close aria-label="閉じる">×</button>
-      <div id="modal-content"></div>
+    <!-- 操作パッド -->
+    <div id="controls">
+      <div id="dpad">
+        <button class="dpad-btn up" data-dir="up">▲</button>
+        <button class="dpad-btn left" data-dir="left">◀</button>
+        <button class="dpad-btn right" data-dir="right">▶</button>
+        <button class="dpad-btn down" data-dir="down">▼</button>
+      </div>
+      <div class="control-hint">
+        移動: 矢印キー / 十字キー<br />
+        メッセージ送り: Z・Enter・クリック
+      </div>
+      <button id="btn-a" class="ab-btn">A</button>
     </div>
   </div>
-
-  <footer class="footer">
-    カントーちほう 151ひき ｜ データ提供:
-    <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokeAPI</a>
-  </footer>
 
   <script src="app.js"></script>
 </body>
