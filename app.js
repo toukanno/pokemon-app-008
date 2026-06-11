@@ -1,17 +1,8 @@
 const API_BASE = "https://pokeapi.co/api/v2";
 
-// 世代ごとの全国図鑑番号範囲
-const GEN_RANGES = {
-  1: [1, 151],
-  2: [152, 251],
-  3: [252, 386],
-  4: [387, 493],
-  5: [494, 649],
-  6: [650, 721],
-  7: [722, 809],
-  8: [810, 905],
-  9: [906, 1025],
-};
+// ファイアレッド = カントー図鑑 151匹
+const DEX_START = 1;
+const DEX_END = 151;
 
 const TYPE_JA = {
   normal: "ノーマル",
@@ -46,18 +37,15 @@ const STAT_JA = {
 const grid = document.getElementById("pokemon-grid");
 const statusEl = document.getElementById("status");
 const searchInput = document.getElementById("search-input");
-const genSelect = document.getElementById("gen-select");
 const modal = document.getElementById("modal");
 const modalContent = document.getElementById("modal-content");
 
-// id => { id, name, nameJa, types, sprite }
 const pokemonCache = new Map();
 const speciesCache = new Map();
 const detailCache = new Map();
 const abilityNameCache = new Map();
 
 let currentList = [];
-let loadToken = 0; // 世代切替時に古いロードを破棄するためのトークン
 
 function showStatus(text) {
   statusEl.textContent = text;
@@ -77,6 +65,36 @@ function getJaName(names, fallback) {
   return ja ? ja.name : fallback;
 }
 
+// ファイアレッド版のGBAドット絵を優先して取得
+function getFrSprite(pokemon) {
+  const gen3 = pokemon.sprites.versions?.["generation-iii"];
+  return (
+    gen3?.["firered-leafgreen"]?.front_default ||
+    pokemon.sprites.front_default ||
+    pokemon.sprites.other["official-artwork"].front_default
+  );
+}
+
+// 図鑑説明: ファイアレッド版の日本語 → 他バージョンの日本語 → ファイアレッド版英語 → 英語
+function getFlavor(species) {
+  const entries = species.flavor_text_entries;
+  const isJa = (e) => e.language.name === "ja" || e.language.name === "ja-Hrkt";
+  const isEn = (e) => e.language.name === "en";
+  const isFr = (e) => e.version?.name === "firered";
+
+  const entry =
+    entries.find((e) => isFr(e) && isJa(e)) ||
+    entries.find(isJa) ||
+    entries.find((e) => isFr(e) && isEn(e)) ||
+    entries.find(isEn);
+
+  if (!entry) return { text: "", fromFr: false };
+  return {
+    text: entry.flavor_text.replace(/[\s\f]+/g, ""),
+    fromFr: isFr(entry),
+  };
+}
+
 async function loadSummary(id) {
   if (pokemonCache.has(id)) return pokemonCache.get(id);
   const [pokemon, species] = await Promise.all([
@@ -89,9 +107,7 @@ async function loadSummary(id) {
     name: pokemon.name,
     nameJa: getJaName(species.names, pokemon.name),
     types: pokemon.types.map((t) => t.type.name),
-    sprite:
-      pokemon.sprites.front_default ||
-      pokemon.sprites.other["official-artwork"].front_default,
+    sprite: getFrSprite(pokemon),
     raw: pokemon,
   };
   pokemonCache.set(id, summary);
@@ -99,15 +115,13 @@ async function loadSummary(id) {
 }
 
 // 同時リクエスト数を制限しながら順次ロードして描画
-async function loadGeneration(gen) {
-  const token = ++loadToken;
-  const [start, end] = GEN_RANGES[gen];
+async function loadDex() {
   const ids = [];
-  for (let i = start; i <= end; i++) ids.push(i);
+  for (let i = DEX_START; i <= DEX_END; i++) ids.push(i);
 
   currentList = [];
   grid.innerHTML = "";
-  showStatus("読み込み中…");
+  showStatus("よみこみちゅう…");
 
   const CONCURRENCY = 20;
   let index = 0;
@@ -118,22 +132,19 @@ async function loadGeneration(gen) {
       const id = ids[index++];
       try {
         const summary = await loadSummary(id);
-        if (token !== loadToken) return;
         currentList.push(summary);
-        loaded++;
-        if (loaded % CONCURRENCY === 0 || loaded === ids.length) {
-          showStatus(`読み込み中… ${loaded} / ${ids.length}`);
-          renderGrid();
-        }
       } catch (e) {
         console.error(e);
-        loaded++;
+      }
+      loaded++;
+      if (loaded % CONCURRENCY === 0 || loaded === ids.length) {
+        showStatus(`よみこみちゅう… ${loaded} / ${ids.length}`);
+        renderGrid();
       }
     }
   }
 
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
-  if (token !== loadToken) return;
   showStatus("");
   renderGrid();
 }
@@ -152,10 +163,10 @@ function renderGrid() {
 
   grid.innerHTML = "";
   if (filtered.length === 0 && !statusEl.textContent) {
-    showStatus("見つかりませんでした");
+    showStatus("みつかりませんでした");
     return;
   }
-  if (filtered.length > 0 && statusEl.textContent === "見つかりませんでした") {
+  if (filtered.length > 0 && statusEl.textContent === "みつかりませんでした") {
     showStatus("");
   }
 
@@ -165,7 +176,7 @@ function renderGrid() {
     card.className = "card";
     card.type = "button";
     card.innerHTML = `
-      <p class="no">No.${String(p.id).padStart(4, "0")}</p>
+      <p class="no">No.${String(p.id).padStart(3, "0")}</p>
       <img src="${p.sprite}" alt="${p.nameJa}" loading="lazy" />
       <p class="name">${p.nameJa}</p>
       <div class="types">
@@ -197,10 +208,7 @@ async function loadDetail(id) {
   const species = speciesCache.get(id);
   const pokemon = summary.raw;
 
-  const flavorEntry =
-    species.flavor_text_entries.find((e) => e.language.name === "ja") ||
-    species.flavor_text_entries.find((e) => e.language.name === "ja-Hrkt") ||
-    species.flavor_text_entries.find((e) => e.language.name === "en");
+  const flavor = getFlavor(species);
   const genusEntry =
     species.genera.find((g) => g.language.name === "ja") ||
     species.genera.find((g) => g.language.name === "ja-Hrkt");
@@ -214,9 +222,8 @@ async function loadDetail(id) {
 
   const detail = {
     ...summary,
-    artwork:
-      pokemon.sprites.other["official-artwork"].front_default || summary.sprite,
-    flavor: flavorEntry ? flavorEntry.flavor_text.replace(/\s+/g, "") : "",
+    flavor: flavor.text,
+    flavorFromFr: flavor.fromFr,
     genus: genusEntry ? genusEntry.genus : "",
     height: pokemon.height / 10, // m
     weight: pokemon.weight / 10, // kg
@@ -232,13 +239,13 @@ async function loadDetail(id) {
 
 async function openDetail(id) {
   modal.hidden = false;
-  modalContent.innerHTML = `<div class="status">読み込み中…</div>`;
+  modalContent.innerHTML = `<div class="status">よみこみちゅう…</div>`;
   try {
     const d = await loadDetail(id);
     modalContent.innerHTML = `
       <div class="detail-header">
-        <img src="${d.artwork}" alt="${d.nameJa}" />
-        <p class="no">No.${String(d.id).padStart(4, "0")}</p>
+        <img src="${d.sprite}" alt="${d.nameJa}" />
+        <p class="no">No.${String(d.id).padStart(3, "0")}</p>
         <h2>${d.nameJa}</h2>
         <p class="genus">${d.genus}</p>
         <div class="types">
@@ -259,7 +266,7 @@ async function openDetail(id) {
           .join(" / ")}</strong></div>
       </div>
       <div class="stats">
-        <h3>種族値</h3>
+        <h3>しゅぞくち</h3>
         ${d.stats
           .map(
             (s) => `
@@ -277,7 +284,7 @@ async function openDetail(id) {
     `;
   } catch (e) {
     console.error(e);
-    modalContent.innerHTML = `<div class="status">読み込みに失敗しました</div>`;
+    modalContent.innerHTML = `<div class="status">よみこみに しっぱいしました</div>`;
   }
 }
 
@@ -301,10 +308,4 @@ searchInput.addEventListener("input", () => {
   searchTimer = setTimeout(renderGrid, 150);
 });
 
-genSelect.addEventListener("change", () => {
-  searchInput.value = "";
-  loadGeneration(Number(genSelect.value));
-});
-
-// 初期表示: 第1世代
-loadGeneration(1);
+loadDex();

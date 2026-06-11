@@ -1,10 +1,15 @@
+/* ファイアレッド(GBA)風テーマ */
 :root {
-  --red: #e3350d;
-  --dark: #1f2937;
-  --bg: #f4f5f7;
-  --card-bg: #ffffff;
-  --radius: 14px;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --fr-red: #d8453e;
+  --fr-red-dark: #a02822;
+  --fr-orange: #f0a060;
+  --fr-bg: #282828;
+  --fr-panel: #383838;
+  --fr-panel-light: #484848;
+  --fr-text: #f8f8f8;
+  --fr-text-dim: #b0b0b0;
+  --fr-border: #181818;
+  --radius: 4px;
 }
 
 * {
@@ -13,19 +18,35 @@
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
-  background: var(--bg);
-  color: var(--dark);
+  font-family: "DotGothic16", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  background: var(--fr-bg);
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent 0 2px,
+    rgba(0, 0, 0, 0.08) 2px 4px
+  );
+  color: var(--fr-text);
+}
+
+/* ---------- GBA風ウィンドウ枠 ---------- */
+.gba-frame,
+.card,
+.modal-card,
+.search-box input {
+  border: 3px solid var(--fr-border);
+  box-shadow:
+    inset 0 0 0 2px #686868,
+    inset 0 0 0 4px var(--fr-border);
 }
 
 /* ---------- ヘッダー ---------- */
 .header {
-  background: var(--red);
+  background: linear-gradient(to bottom, var(--fr-red) 0 60%, var(--fr-red-dark) 60% 100%);
+  border-bottom: 4px solid var(--fr-border);
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .header-inner {
@@ -45,6 +66,16 @@ body {
   align-items: center;
   gap: 8px;
   white-space: nowrap;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.version-tag {
+  font-size: 0.7rem;
+  background: var(--fr-orange);
+  color: #402000;
+  padding: 3px 8px;
+  border: 2px solid var(--fr-border);
+  text-shadow: none;
 }
 
 .pokeball {
@@ -78,19 +109,13 @@ body {
 
 .search-box input {
   width: 100%;
-  padding: 10px 14px;
-  border: none;
-  border-radius: 999px;
+  padding: 8px 12px;
   font-size: 1rem;
+  font-family: inherit;
   outline: none;
-}
-
-.gen-select-box select {
-  padding: 10px 12px;
-  border: none;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  cursor: pointer;
+  background: #f8f8f0;
+  color: #282828;
+  border-radius: 0;
 }
 
 /* ---------- グリッド ---------- */
@@ -104,7 +129,7 @@ main {
   text-align: center;
   padding: 40px 0;
   font-size: 1.05rem;
-  color: #6b7280;
+  color: var(--fr-text-dim);
 }
 
 .grid {
@@ -114,20 +139,18 @@ main {
 }
 
 .card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: var(--fr-panel);
   padding: 12px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  border: none;
+  transition: transform 0.1s ease;
+  color: var(--fr-text);
   font-family: inherit;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  background: var(--fr-panel-light);
 }
 
 .card img {
@@ -137,7 +160,7 @@ main {
 }
 
 .card .no {
-  color: #9ca3af;
+  color: var(--fr-orange);
   font-size: 0.8rem;
   margin: 0;
 }
@@ -159,9 +182,10 @@ main {
 .type-badge {
   font-size: 0.72rem;
   color: #fff;
-  padding: 3px 10px;
-  border-radius: 999px;
+  padding: 2px 8px;
+  border: 2px solid var(--fr-border);
   font-weight: 600;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .type-normal { background: #a8a878; }
@@ -197,31 +221,30 @@ main {
 .modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .modal-card {
   position: relative;
-  background: #fff;
-  border-radius: var(--radius);
+  background: var(--fr-panel);
   max-width: 480px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   padding: 24px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 12px;
+  top: 8px;
+  right: 10px;
   border: none;
   background: none;
   font-size: 1.6rem;
   cursor: pointer;
-  color: #9ca3af;
+  color: var(--fr-text-dim);
   line-height: 1;
+  font-family: inherit;
 }
 
 .detail-header {
@@ -231,11 +254,14 @@ main {
 .detail-header img {
   width: 160px;
   height: 160px;
+  image-rendering: pixelated;
+  background: var(--fr-panel-light);
+  border: 3px solid var(--fr-border);
 }
 
 .detail-header .no {
-  color: #9ca3af;
-  margin: 0;
+  color: var(--fr-orange);
+  margin: 8px 0 0;
 }
 
 .detail-header h2 {
@@ -243,17 +269,19 @@ main {
 }
 
 .detail-header .genus {
-  color: #6b7280;
+  color: var(--fr-text-dim);
   margin: 0 0 10px;
   font-size: 0.9rem;
 }
 
 .flavor {
-  background: #f9fafb;
-  border-radius: 10px;
+  background: #f8f8f0;
+  color: #282828;
+  border: 3px solid var(--fr-border);
+  box-shadow: inset 0 0 0 2px #686868;
   padding: 12px 14px;
-  font-size: 0.92rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
+  line-height: 1.8;
   margin: 14px 0;
 }
 
@@ -262,13 +290,14 @@ main {
   justify-content: center;
   gap: 24px;
   margin: 10px 0 16px;
-  color: #4b5563;
+  color: var(--fr-text-dim);
   font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 
 .meta strong {
   display: block;
-  color: var(--dark);
+  color: var(--fr-text);
   font-size: 1.05rem;
 }
 
@@ -276,7 +305,7 @@ main {
 .stats h3 {
   font-size: 1rem;
   margin: 0 0 10px;
-  border-left: 4px solid var(--red);
+  border-left: 6px solid var(--fr-red);
   padding-left: 8px;
 }
 
@@ -295,17 +324,16 @@ main {
 }
 
 .stat-bar {
-  background: #e5e7eb;
-  border-radius: 999px;
-  height: 10px;
+  background: var(--fr-border);
+  height: 12px;
   overflow: hidden;
+  border: 2px solid var(--fr-border);
 }
 
 .stat-bar span {
   display: block;
   height: 100%;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #f8b820, #e3350d);
+  background: linear-gradient(90deg, var(--fr-orange), var(--fr-red));
   transition: width 0.4s ease;
 }
 
@@ -313,12 +341,12 @@ main {
 .footer {
   text-align: center;
   padding: 20px;
-  color: #9ca3af;
+  color: var(--fr-text-dim);
   font-size: 0.85rem;
 }
 
 .footer a {
-  color: var(--red);
+  color: var(--fr-orange);
 }
 
 @media (max-width: 480px) {
