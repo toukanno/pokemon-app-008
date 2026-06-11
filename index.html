@@ -43,6 +43,7 @@
           <div id="map"></div>
           <div id="player"></div>
         </div>
+        <div id="area-name"></div>
         <div class="world-ui">
           <button id="btn-party" class="gba-btn small">ポケモン</button>
         </div>
@@ -89,6 +90,16 @@
         <div id="party-list"></div>
         <button id="btn-party-close" class="gba-btn">とじる</button>
       </section>
+
+      <!-- つよさをみる画面 -->
+      <section id="overlay-stats" class="overlay" hidden>
+        <h2 class="party-heading">つよさをみる</h2>
+        <div id="stats-content"></div>
+        <button id="btn-stats-close" class="gba-btn">とじる</button>
+      </section>
+
+      <!-- 汎用コンテキストメニュー -->
+      <div id="context-menu" class="battle-menu single" hidden></div>
 
       <!-- メッセージボックス（共通） -->
       <div id="msgbox" hidden>

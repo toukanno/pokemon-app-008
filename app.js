@@ -38,26 +38,8 @@ function effectiveness(moveType, defTypes) {
 
 // ---------- マップ ----------
 // T=木(進入不可) .=道 g=草むら G=深い草むら W=水(進入不可) C=ポケモンセンター F=花
-const MAP_SRC = [
-  "TTTTTTTTTTTTTTTTTTTT",
-  "T......TTTT....GGGTT",
-  "T.gggg.TTTT.F..GGGTT",
-  "T.gggg......F..GGGTT",
-  "T.gggg.TT.......GGTT",
-  "T......TT..TTT...TTT",
-  "T..TTTTTT..TCT....WT",
-  "T..........T.T....WT",
-  "T...F..............T",
-  "T.TTT...gggg...F...T",
-  "T.T.T...gggg.......T",
-  "T.....F.gggg...WWW.T",
-  "T.......gggg...WWW.T",
-  "T..................T",
-  "TTTTTTTTTTTTTTTTTTTT",
-];
 const MAP_W = 20;
 const MAP_H = 15;
-const SPAWN = { x: 12, y: 7 }; // ポケモンセンター前
 const BLOCKED = new Set(["T", "W"]);
 
 const TILE_CLASS = {
@@ -65,30 +47,124 @@ const TILE_CLASS = {
   W: "water", C: "center", F: "flower",
 };
 
-// 出現テーブル
-const ENCOUNTERS = {
-  g: {
-    rate: 0.18,
-    table: [
-      { id: 16, min: 2, max: 4 }, // ポッポ
-      { id: 19, min: 2, max: 4 }, // コラッタ
-      { id: 10, min: 3, max: 5 }, // キャタピー
-      { id: 13, min: 3, max: 5 }, // ビードル
-      { id: 21, min: 3, max: 5 }, // オニスズメ
+const LOW_TABLE = [
+  { id: 16, min: 2, max: 4 }, // ポッポ
+  { id: 19, min: 2, max: 4 }, // コラッタ
+  { id: 10, min: 3, max: 5 }, // キャタピー
+  { id: 13, min: 3, max: 5 }, // ビードル
+  { id: 21, min: 3, max: 5 }, // オニスズメ
+];
+
+const HIGH_TABLE = [
+  { id: 25, min: 6, max: 10 }, // ピカチュウ
+  { id: 43, min: 6, max: 10 }, // ナゾノクサ
+  { id: 56, min: 6, max: 10 }, // マンキー
+  { id: 29, min: 6, max: 10 }, // ニドラン♀
+  { id: 32, min: 6, max: 10 }, // ニドラン♂
+  { id: 23, min: 6, max: 10 }, // アーボ
+];
+
+const MAPS = {
+  townA: {
+    name: "ハジメタウン",
+    town: true,
+    spawn: { x: 9, y: 12 },
+    flySpot: { x: 8, y: 5 },
+    exits: { up: "route1" },
+    encounters: {},
+    src: [
+      "TTTTTTTT..TTTTTTTTTT",
+      "T..................T",
+      "T..F...........F...T",
+      "T......TTT.........T",
+      "T......TCT.....TT..T",
+      "T......T.T.....TT..T",
+      "T..................T",
+      "T....F.......F.....T",
+      "T..................T",
+      "T...TT.......TT....T",
+      "T...TT..F....TT....T",
+      "T..................T",
+      "T..................T",
+      "T..................T",
+      "TTTTTTTTTTTTTTTTTTTT",
     ],
   },
-  G: {
-    rate: 0.22,
-    table: [
-      { id: 25, min: 5, max: 8 }, // ピカチュウ
-      { id: 43, min: 5, max: 8 }, // ナゾノクサ
-      { id: 56, min: 5, max: 8 }, // マンキー
-      { id: 29, min: 5, max: 8 }, // ニドラン♀
-      { id: 32, min: 5, max: 8 }, // ニドラン♂
-      { id: 23, min: 5, max: 8 }, // アーボ
+  route1: {
+    name: "1ばんどうろ",
+    exits: { down: "townA", up: "townB" },
+    encounters: { g: { rate: 0.18, table: LOW_TABLE } },
+    src: [
+      "TTTTTTTT..TTTTTTTTTT",
+      "T......gg..........T",
+      "T..ggggggg...F.....T",
+      "T..ggggggg.........T",
+      "T..................T",
+      "T.....TT...ggggg...T",
+      "T.....TT...ggggg...T",
+      "T..........ggggg...T",
+      "T..F...............T",
+      "T........TT........T",
+      "T.gggg...TT....F...T",
+      "T.gggg.............T",
+      "T.gggg.............T",
+      "T..................T",
+      "TTTTTTTT..TTTTTTTTTT",
+    ],
+  },
+  townB: {
+    name: "ミドリシティ",
+    town: true,
+    flySpot: { x: 9, y: 4 },
+    exits: { down: "route1", right: "route2" },
+    encounters: {},
+    src: [
+      "TTTTTTTTTTTTTTTTTTTT",
+      "T..................T",
+      "T..F....TTT....F...T",
+      "T.......TCT........T",
+      "T.......T.T........T",
+      "T..................T",
+      "T....TT......TT....T",
+      "T....TT......TT.....",
+      "T...................",
+      "T..F..........F....T",
+      "T..................T",
+      "T....WWW...........T",
+      "T....WWW...........T",
+      "T..................T",
+      "TTTTTTTT..TTTTTTTTTT",
+    ],
+  },
+  route2: {
+    name: "2ばんどうろ",
+    exits: { left: "townB" },
+    encounters: { G: { rate: 0.22, table: HIGH_TABLE } },
+    src: [
+      "TTTTTTTTTTTTTTTTTTTT",
+      "T....GGGG......WWWWT",
+      "T....GGGG......WWWWT",
+      "T....GGGG.......WWWT",
+      "T..................T",
+      "T..TTT....GGGGG....T",
+      "T..TTT....GGGGG....T",
+      "...TTT....GGGGG....T",
+      "..................FT",
+      "T...GGGG...........T",
+      "T...GGGG....TT.....T",
+      "T...GGGG....TT..F..T",
+      "T..................T",
+      "T..................T",
+      "TTTTTTTTTTTTTTTTTTTT",
     ],
   },
 };
+
+const START_MAP = "townA";
+
+function currentMapData() {
+  return MAPS[state.map];
+}
 
 const STARTERS = [1, 4, 7]; // フシギダネ・ヒトカゲ・ゼニガメ
 
@@ -103,7 +179,10 @@ const screens = {
 
 // ---------- ゲーム状態 ----------
 const state = {
-  pos: { ...SPAWN },
+  map: START_MAP,
+  pos: { x: 9, y: 12 },
+  visited: [START_MAP],
+  lastHeal: { map: START_MAP, pos: { x: 8, y: 4 } },
   party: [],
   box: [],
   items: { ball: 10, potion: 5 },
@@ -320,7 +399,10 @@ async function createInstance(id, level) {
 // ---------- セーブ ----------
 function save() {
   const data = {
+    map: state.map,
     pos: state.pos,
+    visited: state.visited,
+    lastHeal: state.lastHeal,
     party: state.party,
     box: state.box,
     items: state.items,
@@ -359,10 +441,22 @@ $("btn-new").addEventListener("click", () => {
 $("btn-continue").addEventListener("click", () => {
   const data = loadSave();
   if (!data) return;
-  state.pos = data.pos;
   state.party = data.party;
   state.box = data.box || [];
   state.items = data.items;
+  if (data.map && MAPS[data.map]) {
+    // 新形式セーブ
+    state.map = data.map;
+    state.pos = data.pos;
+    state.visited = data.visited || [START_MAP];
+    state.lastHeal = data.lastHeal || { map: START_MAP, pos: { x: 8, y: 4 } };
+  } else {
+    // 旧形式セーブ(単一マップ時代)はスタート地点から再開
+    state.map = START_MAP;
+    state.pos = { ...MAPS[START_MAP].spawn };
+    state.visited = [START_MAP];
+    state.lastHeal = { map: START_MAP, pos: { x: 8, y: 4 } };
+  }
   enterWorld();
 });
 
@@ -407,7 +501,10 @@ async function chooseStarter(id, nameJa) {
   showLoading(false);
   state.party = [starter];
   state.items = { ball: 10, potion: 5 };
-  state.pos = { ...SPAWN };
+  state.map = START_MAP;
+  state.pos = { ...MAPS[START_MAP].spawn };
+  state.visited = [START_MAP];
+  state.lastHeal = { map: START_MAP, pos: { x: 8, y: 4 } };
   await say(`${nameJa}を てにいれた！`);
   await say("オーキド『モンスターボールと キズぐすりも もたせておこう。");
   await say("オーキド『くさむらで ポケモンを つかまえて りっぱな トレーナーに なるんじゃぞ！");
@@ -419,12 +516,13 @@ async function chooseStarter(id, nameJa) {
 
 // ---------- フィールド ----------
 function buildMap() {
+  const src = currentMapData().src;
   const map = $("map");
   map.innerHTML = "";
   for (let y = 0; y < MAP_H; y++) {
     for (let x = 0; x < MAP_W; x++) {
       const t = document.createElement("div");
-      t.className = `tile ${TILE_CLASS[MAP_SRC[y][x]] || "path"}`;
+      t.className = `tile ${TILE_CLASS[src[y][x]] || "path"}`;
       map.appendChild(t);
     }
   }
@@ -437,8 +535,10 @@ function renderPlayer() {
 }
 
 function enterWorld() {
+  if (!state.visited.includes(state.map)) state.visited.push(state.map);
   buildMap();
   renderPlayer();
+  $("area-name").textContent = currentMapData().name;
   showScreen("world");
 }
 
@@ -452,11 +552,28 @@ const DIRS = {
 function tryMove(dir) {
   if (state.busy || !advanceIsIdle()) return;
   if (screens.world.hidden) return;
+  const m = currentMapData();
   const [dx, dy] = DIRS[dir];
   const nx = state.pos.x + dx;
   const ny = state.pos.y + dy;
-  if (nx < 0 || ny < 0 || nx >= MAP_W || ny >= MAP_H) return;
-  const tile = MAP_SRC[ny][nx];
+
+  // マップ端から隣のエリアへ移動
+  if (nx < 0 || ny < 0 || nx >= MAP_W || ny >= MAP_H) {
+    const dest = m.exits?.[dir];
+    if (!dest) return;
+    const wx = (nx + MAP_W) % MAP_W;
+    const wy = (ny + MAP_H) % MAP_H;
+    const destTile = MAPS[dest].src[wy][wx];
+    if (BLOCKED.has(destTile)) return;
+    state.map = dest;
+    state.pos = { x: wx, y: wy };
+    enterWorld();
+    save();
+    onStep(destTile);
+    return;
+  }
+
+  const tile = m.src[ny][nx];
   if (BLOCKED.has(tile)) return;
   state.pos = { x: nx, y: ny };
   renderPlayer();
@@ -476,6 +593,7 @@ async function onStep(tile) {
     });
     state.items.ball = Math.max(state.items.ball, 10);
     state.items.potion = Math.max(state.items.potion, 5);
+    state.lastHeal = { map: state.map, pos: { ...state.pos } };
     await say("ポケモンセンターへ ようこそ！");
     await say("ポケモンたちは すっかり げんきになりました！\nどうぐも ほきゅうして おきますね。");
     closeMsg();
@@ -484,7 +602,7 @@ async function onStep(tile) {
     return;
   }
 
-  const zone = ENCOUNTERS[tile];
+  const zone = currentMapData().encounters?.[tile];
   if (zone && Math.random() < zone.rate) {
     state.busy = true;
     const pick = zone.table[rand(0, zone.table.length - 1)];
@@ -536,31 +654,36 @@ function openParty(mode = "view") {
   return new Promise((resolve) => {
     const overlay = $("overlay-party");
     const list = $("party-list");
-    list.innerHTML = "";
 
-    state.party.forEach((p, i) => {
-      const row = document.createElement("button");
-      row.className = "party-row" + (p.hp <= 0 ? " fainted" : "");
-      const ratio = p.hp / p.stats.maxHp;
-      row.innerHTML = `
-        <img src="${p.sprites.front}" alt="${p.nameJa}" />
-        <div>
-          <div class="p-name">${p.nameJa} Lv.${p.level}</div>
-          <div class="p-moves">${p.moves.map((m) => m.nameJa).join("／")}</div>
-        </div>
-        <div class="p-hp">
-          <div class="hp-bar"><span class="${hpBarClass(ratio)}" style="width:${Math.max(0, ratio * 100)}%"></span></div>
-          ${p.hp} / ${p.stats.maxHp}
-        </div>
-      `;
-      row.addEventListener("click", () => {
-        if (mode === "switch") {
-          if (p.hp <= 0 || i === 0) return;
-          close(i);
-        }
+    function render() {
+      list.innerHTML = "";
+      state.party.forEach((p, i) => {
+        const row = document.createElement("button");
+        row.className = "party-row" + (p.hp <= 0 ? " fainted" : "");
+        const ratio = p.hp / p.stats.maxHp;
+        row.innerHTML = `
+          <img src="${p.sprites.front}" alt="${p.nameJa}" />
+          <div>
+            <div class="p-name">${p.nameJa} Lv.${p.level}</div>
+            <div class="p-moves">${p.moves.map((m) => m.nameJa).join("／")}</div>
+          </div>
+          <div class="p-hp">
+            <div class="hp-bar"><span class="${hpBarClass(ratio)}" style="width:${Math.max(0, ratio * 100)}%"></span></div>
+            ${p.hp} / ${p.stats.maxHp}
+          </div>
+        `;
+        row.addEventListener("click", async () => {
+          if (mode === "switch") {
+            if (p.hp <= 0 || i === 0) return;
+            close(i);
+            return;
+          }
+          const acted = await partyContextMenu(p, i, close);
+          if (acted === "rerender") render();
+        });
+        list.appendChild(row);
       });
-      list.appendChild(row);
-    });
+    }
 
     function close(result) {
       overlay.hidden = true;
@@ -568,8 +691,97 @@ function openParty(mode = "view") {
       resolve(result);
     }
 
+    render();
     $("btn-party-close").onclick = () => close(null);
     overlay.hidden = false;
+  });
+}
+
+// ポケモンを選んだときのメニュー（つよさをみる・そらをとぶ・ならびかえ）
+async function partyContextMenu(mon, index, closeParty) {
+  const flyTowns = state.visited.filter(
+    (id) => MAPS[id].town && id !== state.map
+  );
+  const canFly =
+    mon.hp > 0 && mon.types.includes("flying") && flyTowns.length > 0;
+
+  const action = await chooseFromMenu($("context-menu"), [
+    { label: "つよさをみる", value: "stats" },
+    { label: "そらをとぶ", value: "fly", disabled: !canFly },
+    { label: "せんとうへ", value: "front", disabled: index === 0 },
+    { label: "やめる", value: null },
+  ]);
+
+  if (action === "stats") {
+    await showStats(mon);
+    return null;
+  }
+  if (action === "front") {
+    const [m] = state.party.splice(index, 1);
+    state.party.unshift(m);
+    save();
+    return "rerender";
+  }
+  if (action === "fly") {
+    const dest = await chooseFromMenu(
+      $("context-menu"),
+      flyTowns
+        .map((id) => ({ label: MAPS[id].name, value: id }))
+        .concat([{ label: "やめる", value: null }])
+    );
+    if (!dest) return null;
+    closeParty(null);
+    state.busy = true;
+    await say(`${mon.nameJa}は そらを とんだ！`);
+    closeMsg();
+    state.map = dest;
+    state.pos = { ...MAPS[dest].flySpot };
+    enterWorld();
+    save();
+    state.busy = false;
+    return null;
+  }
+  return null;
+}
+
+// つよさをみる画面
+function showStats(mon) {
+  return new Promise((resolve) => {
+    const next = mon.level < 100 ? expForLevel(mon.level + 1) - mon.exp : 0;
+    $("stats-content").innerHTML = `
+      <div class="stats-head">
+        <img src="${mon.sprites.front}" alt="${mon.nameJa}" />
+        <div>
+          <div class="p-name">${mon.nameJa} Lv.${mon.level}</div>
+          <div class="stats-types">${mon.types
+            .map((t) => TYPE_JA[t] || t)
+            .join("・")}</div>
+          <div class="stats-hp">HP ${mon.hp} / ${mon.stats.maxHp}</div>
+        </div>
+      </div>
+      <table class="stats-table">
+        <tr><td>こうげき</td><td>${mon.stats.atk}</td><td>とくこう</td><td>${mon.stats.spa}</td></tr>
+        <tr><td>ぼうぎょ</td><td>${mon.stats.def}</td><td>とくぼう</td><td>${mon.stats.spd}</td></tr>
+        <tr><td>すばやさ</td><td>${mon.stats.spe}</td><td>つぎのLvまで</td><td>${next}</td></tr>
+      </table>
+      <div class="stats-moves">
+        ${mon.moves
+          .map(
+            (m) =>
+              `<div class="stats-move"><span>${m.nameJa}</span><span>${
+                TYPE_JA[m.type] || m.type
+              }｜いりょく${m.power}｜PP ${m.pp}/${m.maxPp}</span></div>`
+          )
+          .join("")}
+      </div>
+    `;
+    const ov = $("overlay-stats");
+    ov.hidden = false;
+    $("btn-stats-close").onclick = () => {
+      ov.hidden = true;
+      $("btn-stats-close").onclick = null;
+      resolve();
+    };
   });
 }
 
@@ -910,7 +1122,8 @@ async function battle(enemy) {
           p.hp = p.stats.maxHp;
           p.moves.forEach((m) => (m.pp = m.maxPp));
         });
-        state.pos = { ...SPAWN };
+        state.map = state.lastHeal.map;
+        state.pos = { ...state.lastHeal.pos };
         result = "lose";
         break;
       }
