@@ -210,6 +210,23 @@ function showLoading(on) {
   $("loading").hidden = !on;
 }
 
+// 通信エラーなどで固まらないように、エラーを画面に表示して復帰させる
+function reportError(err) {
+  console.error(err);
+  const el = $("loading");
+  el.innerHTML =
+    "<span class='err'>つうしんエラーが はっせいしました<br>がめんを タップすると もどります</span>";
+  el.hidden = false;
+  el.onclick = () => {
+    el.hidden = true;
+    el.innerHTML = "<span>・・・</span>";
+    el.onclick = null;
+    state.busy = false;
+  };
+}
+
+window.addEventListener("unhandledrejection", (e) => reportError(e.reason));
+
 function showScreen(name) {
   Object.entries(screens).forEach(([k, el]) => (el.hidden = k !== name));
 }
@@ -266,6 +283,11 @@ function promptText(text) {
 
 $("msgbox").addEventListener("click", pressA);
 $("btn-a").addEventListener("click", pressA);
+
+// メッセージ待ちのときは画面のどこをタップしても進める(モバイル向け)
+$("gba-screen").addEventListener("click", () => {
+  if (typing || advanceResolve) pressA();
+});
 
 // ---------- PokeAPI キャッシュ ----------
 const bundleCache = new Map(); // id => {pokemon, species}
@@ -471,7 +493,14 @@ async function startIntro() {
   state.busy = false;
 
   showLoading(true);
-  const bundles = await Promise.all(STARTERS.map((id) => getBundle(id)));
+  let bundles;
+  try {
+    bundles = await Promise.all(STARTERS.map((id) => getBundle(id)));
+  } catch (e) {
+    reportError(e);
+    initTitle();
+    return;
+  }
   showLoading(false);
 
   const wrap = $("starter-cards");
@@ -497,7 +526,14 @@ async function chooseStarter(id, nameJa) {
   if (starterChosen) return;
   starterChosen = true;
   showLoading(true);
-  const starter = await createInstance(id, 5);
+  let starter;
+  try {
+    starter = await createInstance(id, 5);
+  } catch (e) {
+    starterChosen = false;
+    reportError(e);
+    return;
+  }
   showLoading(false);
   state.party = [starter];
   state.items = { ball: 10, potion: 5 };
