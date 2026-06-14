@@ -1,0 +1,51 @@
+name: Build & Test (Elementa Monsters)
+
+# 静的解析・テスト・APKビルドを CI 上で実行する。
+# (Android Gradle Plugin / AndroidX は Google Maven からのみ取得できるため、
+#  ネットワーク制限のある環境ではこの CI で APK をビルドする)
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  analyze-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.27.1'
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+
+  build-apk:
+    needs: analyze-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.27.1'
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Build release APK
+        run: flutter build apk --release
+      - name: Build split-per-ABI APKs
+        run: flutter build apk --release --split-per-abi
+      - name: Upload APK artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: elementa-monsters-apk
+          path: build/app/outputs/flutter-apk/*.apk
+          if-no-files-found: error
