@@ -1,0 +1,12 @@
+# NOTE: Gradle wrapper (gradlew / gradlew.bat / gradle-wrapper.jar) は
+# CI を自己完結させるため、あえてコミット対象とする。
+/.gradle
+/captures/
+/local.properties
+GeneratedPluginRegistrant.java
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+key.properties
+**/*.keystore
+**/*.jks
