@@ -1,0 +1,365 @@
+{
+  "startMap": "town_komorebi",
+  "maps": {
+    "town_komorebi": {
+      "id": "town_komorebi",
+      "name": "コモレビタウン",
+      "kind": "town",
+      "rows": [
+        "TTTTTTTTTTTTTTTTTT",
+        "T................T",
+        "T.:::............T",
+        "T.:::......BBBB..T",
+        "T..BBB.....BBBB..T",
+        "T..BDB.....BDBB..T",
+        "T................T",
+        "T................T",
+        "T................T",
+        "T..BBB..BBB..:::.T",
+        "T..BHB..BPB..:::.T",
+        "T............:WWWT",
+        "T.............WWWT",
+        "TTTTTTTTTTTTTTTTTT"
+      ],
+      "spawn": [
+        8,
+        7
+      ],
+      "music": "town",
+      "warps": [
+        {
+          "x": 16,
+          "y": 7,
+          "to": "route_1",
+          "tx": 1,
+          "ty": 7
+        }
+      ],
+      "edgeWarps": [
+        {
+          "edge": "right",
+          "to": "route_1",
+          "tx": 1,
+          "ty": 7
+        }
+      ],
+      "npcs": [
+        {
+          "x": 7,
+          "y": 6,
+          "name": "はかせ",
+          "sprite": 0,
+          "lines": [
+            "ようこそ エレメンシア地方へ！",
+            "モンスターは きみの たいせつな パートナーじゃ。",
+            "ずかんを かんせいさせる たびに でかけよう！"
+          ]
+        },
+        {
+          "x": 12,
+          "y": 11,
+          "name": "おんなのこ",
+          "sprite": 1,
+          "lines": [
+            "しげみ に はいると やせいの モンスターが でるんだって。"
+          ]
+        },
+        {
+          "x": 4,
+          "y": 8,
+          "name": "おとこのこ",
+          "sprite": 2,
+          "lines": [
+            "かいふくセンターに のると てもちが ぜんかいふく するよ！"
+          ]
+        }
+      ],
+      "signs": [
+        {
+          "x": 9,
+          "y": 8,
+          "text": "コモレビタウン  〜 かぜ そよぐ はじまりの ち 〜"
+        }
+      ],
+      "encounters": [],
+      "healTiles": [
+        [
+          4,
+          10
+        ]
+      ],
+      "shopTiles": [
+        [
+          9,
+          10
+        ]
+      ]
+    },
+    "route_1": {
+      "id": "route_1",
+      "name": "1ばんどうろ",
+      "kind": "route",
+      "rows": [
+        "TTTTTTTTTTTTTTTTTTTTTT",
+        "T....................T",
+        "T..~~~~~.::...TT.....T",
+        "T..~~~~~.::...TT.....T",
+        "T..~~~~~.............T",
+        "T....................T",
+        "T..........~~~~~~....T",
+        "T..........~~~~~~....T",
+        "T....TT....~~~~~~....T",
+        "T....TT....~~~~~~....T",
+        "T....................T",
+        "TTTTTTTTTTTTTTTTTTTTTT"
+      ],
+      "spawn": [
+        1,
+        7
+      ],
+      "music": "route",
+      "warps": [],
+      "edgeWarps": [
+        {
+          "edge": "left",
+          "to": "town_komorebi",
+          "tx": 15,
+          "ty": 7
+        },
+        {
+          "edge": "right",
+          "to": "town_minato",
+          "tx": 1,
+          "ty": 6
+        }
+      ],
+      "npcs": [
+        {
+          "x": 8,
+          "y": 6,
+          "name": "たんけんか",
+          "sprite": 2,
+          "lines": [
+            "この さきの みなとまち には りっぱな ショップが あるよ。",
+            "そのまえに しげみで レベルあげ だ！"
+          ]
+        }
+      ],
+      "signs": [
+        {
+          "x": 2,
+          "y": 6,
+          "text": "1ばんどうろ  →  みなとまち"
+        }
+      ],
+      "encounters": [
+        {
+          "species": 10,
+          "min": 2,
+          "max": 5,
+          "weight": 30
+        },
+        {
+          "species": 13,
+          "min": 2,
+          "max": 5,
+          "weight": 30
+        },
+        {
+          "species": 16,
+          "min": 3,
+          "max": 6,
+          "weight": 20
+        },
+        {
+          "species": 19,
+          "min": 3,
+          "max": 6,
+          "weight": 15
+        },
+        {
+          "species": 22,
+          "min": 4,
+          "max": 6,
+          "weight": 5
+        }
+      ],
+      "healTiles": [],
+      "shopTiles": []
+    },
+    "town_minato": {
+      "id": "town_minato",
+      "name": "みなとまち",
+      "kind": "town",
+      "rows": [
+        "TTTTTTTTTTTTTTTTTT",
+        "T.............WWWT",
+        "T.............WWWT",
+        "T..BBB..BBB...WWWT",
+        "T..BHB..BPB...WWWT",
+        "T.............WWWT",
+        "T.............WWWT",
+        "T.............WWWT",
+        "T..BBB........WWWT",
+        "T..BDB::......WWWT",
+        "T.....::......WWWT",
+        "T.............WWWT",
+        "TTTTTTTTTTTTTTTTTT"
+      ],
+      "spawn": [
+        1,
+        6
+      ],
+      "music": "town",
+      "warps": [],
+      "edgeWarps": [
+        {
+          "edge": "left",
+          "to": "route_1",
+          "tx": 20,
+          "ty": 7
+        },
+        {
+          "edge": "bottom",
+          "to": "cave_shinobi",
+          "tx": 3,
+          "ty": 1
+        }
+      ],
+      "npcs": [
+        {
+          "x": 11,
+          "y": 6,
+          "name": "ふなのり",
+          "sprite": 0,
+          "lines": [
+            "みなみの どうくつ には つよい モンスターが すむ。",
+            "でんせつの モンスターが いる という うわさ も…！"
+          ]
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "name": "おばあさん",
+          "sprite": 1,
+          "lines": [
+            "ショップで キズぐすり や モンスターボール を そろえなさい。"
+          ]
+        }
+      ],
+      "signs": [
+        {
+          "x": 7,
+          "y": 7,
+          "text": "みなとまち  〜 しおかぜ の みなと 〜"
+        },
+        {
+          "x": 4,
+          "y": 11,
+          "text": "↓ しのびの どうくつ"
+        }
+      ],
+      "encounters": [],
+      "healTiles": [
+        [
+          4,
+          4
+        ]
+      ],
+      "shopTiles": [
+        [
+          9,
+          4
+        ]
+      ]
+    },
+    "cave_shinobi": {
+      "id": "cave_shinobi",
+      "name": "しのびのどうくつ",
+      "kind": "cave",
+      "rows": [
+        "RRRRRRRRRRRRRRRRRRRR",
+        "R..................R",
+        "R.........~~~~.....R",
+        "R...RRR...~~~~.....R",
+        "R...RRR............R",
+        "R...........RRRR...R",
+        "R.~~~.......RRRR...R",
+        "R.~~~..............R",
+        "R.~~~..............R",
+        "R.~~~..RRR....~~~~.R",
+        "R......RRR....~~~~.R",
+        "R.............~~~~.R",
+        "R..................R",
+        "RRRRRRRRRRRRRRRRRRRR"
+      ],
+      "spawn": [
+        3,
+        1
+      ],
+      "music": "cave",
+      "warps": [],
+      "edgeWarps": [
+        {
+          "edge": "top",
+          "to": "town_minato",
+          "tx": 3,
+          "ty": 11
+        }
+      ],
+      "npcs": [
+        {
+          "x": 16,
+          "y": 5,
+          "name": "たんけんか",
+          "sprite": 2,
+          "lines": [
+            "この おくに でんせつの モンスターが ねむっている…",
+            "きみの ちからを みせてみろ！"
+          ]
+        }
+      ],
+      "signs": [],
+      "encounters": [
+        {
+          "species": 25,
+          "min": 8,
+          "max": 12,
+          "weight": 25
+        },
+        {
+          "species": 40,
+          "min": 9,
+          "max": 13,
+          "weight": 25
+        },
+        {
+          "species": 55,
+          "min": 10,
+          "max": 14,
+          "weight": 20
+        },
+        {
+          "species": 70,
+          "min": 11,
+          "max": 15,
+          "weight": 15
+        },
+        {
+          "species": 90,
+          "min": 12,
+          "max": 16,
+          "weight": 10
+        },
+        {
+          "species": 146,
+          "min": 18,
+          "max": 20,
+          "weight": 5
+        }
+      ],
+      "healTiles": [],
+      "shopTiles": []
+    }
+  }
+}

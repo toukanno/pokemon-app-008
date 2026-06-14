@@ -1,0 +1,8412 @@
+[
+  {
+    "id": 1,
+    "name": "メノニョ",
+    "category": "いわやまモンスター",
+    "types": [
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 104,
+      "attack": 78,
+      "defense": 34,
+      "speed": 75,
+      "special": 21
+    },
+    "catchRate": 45,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 2,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 13
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 14
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 15
+      }
+    ],
+    "dexEntry": "やんちゃで ぐんを なす。きけんを かんじると くさの ちからで みを まもる。",
+    "height": 2.1,
+    "weight": 37.2,
+    "isLegendary": false,
+    "spriteColor": "#78C850",
+    "spriteColor2": "#78C850",
+    "spriteShape": 7
+  },
+  {
+    "id": 2,
+    "name": "ベコキム",
+    "category": "けんじゃモンスター",
+    "types": [
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 64,
+      "attack": 109,
+      "defense": 124,
+      "speed": 87,
+      "special": 20
+    },
+    "catchRate": 15,
+    "baseExp": 100,
+    "growthRate": "medium",
+    "evolveTo": 3,
+    "evolveLevel": 34,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 13
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 14
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 15
+      }
+    ],
+    "dexEntry": "くさの ちからを あやつり、そうげんに すんでいる。よる に なると かつどう する。",
+    "height": 3.6,
+    "weight": 93.8,
+    "isLegendary": false,
+    "spriteColor": "#78C850",
+    "spriteColor2": "#78C850",
+    "spriteShape": 2
+  },
+  {
+    "id": 3,
+    "name": "リコレオン",
+    "category": "きばモンスター",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 80,
+      "defense": 130,
+      "speed": 44,
+      "special": 20
+    },
+    "catchRate": 3,
+    "baseExp": 100,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 13
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 14
+      }
+    ],
+    "dexEntry": "こだいモンスター。くさの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 5.0,
+    "weight": 19.0,
+    "isLegendary": false,
+    "spriteColor": "#78C850",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 9
+  },
+  {
+    "id": 4,
+    "name": "ボゴーノ",
+    "category": "いわやまモンスター",
+    "types": [
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 59,
+      "attack": 95,
+      "defense": 42,
+      "speed": 81,
+      "special": 20
+    },
+    "catchRate": 45,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 5,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 8
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 9
+      }
+    ],
+    "dexEntry": "ほのおの ちからを あやつり、かざんちかくに すんでいる。よる に なると かつどう する。",
+    "height": 2.4,
+    "weight": 39.6,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 4
+  },
+  {
+    "id": 5,
+    "name": "ヴニドピ",
+    "category": "いわやまモンスター",
+    "types": [
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 20,
+      "defense": 20,
+      "speed": 106,
+      "special": 130
+    },
+    "catchRate": 15,
+    "baseExp": 101,
+    "growthRate": "medium",
+    "evolveTo": 6,
+    "evolveLevel": 34,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 8
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 9
+      }
+    ],
+    "dexEntry": "ゆうかんで ぐんを なす。きけんを かんじると ほのおの ちからで みを まもる。",
+    "height": 2.7,
+    "weight": 103.0,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 11
+  },
+  {
+    "id": 6,
+    "name": "グキクロス",
+    "category": "そうげんモンスター",
+    "types": [
+      "ほのお",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 56,
+      "defense": 130,
+      "speed": 20,
+      "special": 123
+    },
+    "catchRate": 3,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 8
+      }
+    ],
+    "dexEntry": "よぞらモンスター。ほのおの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 5.2,
+    "weight": 132.2,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 6
+  },
+  {
+    "id": 7,
+    "name": "グポーノ",
+    "category": "せいれいモンスター",
+    "types": [
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 81,
+      "attack": 56,
+      "defense": 120,
+      "speed": 20,
+      "special": 41
+    },
+    "catchRate": 45,
+    "baseExp": 83,
+    "growthRate": "medium",
+    "evolveTo": 8,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 11
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 12
+      }
+    ],
+    "dexEntry": "こだいから いきづく みずの せいれい。その ひたいには ふしぎな ちからが やどる。",
+    "height": 1.1,
+    "weight": 52.9,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 1
+  },
+  {
+    "id": 8,
+    "name": "ジノコッパ",
+    "category": "ほのおモンスター",
+    "types": [
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 86,
+      "attack": 22,
+      "defense": 130,
+      "speed": 30,
+      "special": 123
+    },
+    "catchRate": 15,
+    "baseExp": 98,
+    "growthRate": "medium",
+    "evolveTo": 9,
+    "evolveLevel": 34,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 11
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 12
+      }
+    ],
+    "dexEntry": "とても やんちゃな せいかくで しられる みずタイプの モンスター。",
+    "height": 4.6,
+    "weight": 55.6,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 8
+  },
+  {
+    "id": 9,
+    "name": "ウパギオス",
+    "category": "みずべモンスター",
+    "types": [
+      "みず",
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 130,
+      "defense": 20,
+      "speed": 84,
+      "special": 123
+    },
+    "catchRate": 3,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 37
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 11
+      }
+    ],
+    "dexEntry": "みずの ちからを あやつり、いせきに すんでいる。よる に なると かつどう する。",
+    "height": 6.5,
+    "weight": 173.8,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 3
+  },
+  {
+    "id": 10,
+    "name": "ネパン",
+    "category": "そうげんモンスター",
+    "types": [
+      "ノーマル",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 119,
+      "defense": 32,
+      "speed": 85,
+      "special": 20
+    },
+    "catchRate": 255,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 11,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "おくびょうで ぐんを なす。きけんを かんじると ノーマルの ちからで みを まもる。",
+    "height": 1.2,
+    "weight": 59.2,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 10
+  },
+  {
+    "id": 11,
+    "name": "テニサル",
+    "category": "ほのおモンスター",
+    "types": [
+      "ノーマル",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 104,
+      "attack": 115,
+      "defense": 36,
+      "speed": 63,
+      "special": 97
+    },
+    "catchRate": 225,
+    "baseExp": 103,
+    "growthRate": "medium",
+    "evolveTo": 12,
+    "evolveLevel": 34,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "とても おだやかな せいかくで しられる ノーマルタイプの モンスター。",
+    "height": 4.7,
+    "weight": 13.9,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 5
+  },
+  {
+    "id": 12,
+    "name": "ドラニクス",
+    "category": "もりモンスター",
+    "types": [
+      "ノーマル",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 89,
+      "attack": 71,
+      "defense": 130,
+      "speed": 130,
+      "special": 62
+    },
+    "catchRate": 195,
+    "baseExp": 116,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "そうげんモンスター。ノーマルの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.5,
+    "weight": 136.4,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 0
+  },
+  {
+    "id": 13,
+    "name": "グテピ",
+    "category": "けんじゃモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 24,
+      "attack": 37,
+      "defense": 82,
+      "speed": 30,
+      "special": 116
+    },
+    "catchRate": 255,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 14,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "とても おだやかな せいかくで しられる ノーマルタイプの モンスター。",
+    "height": 0.7,
+    "weight": 43.6,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 7
+  },
+  {
+    "id": 14,
+    "name": "グラゴック",
+    "category": "そうげんモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 52,
+      "attack": 84,
+      "defense": 128,
+      "speed": 90,
+      "special": 66
+    },
+    "catchRate": 225,
+    "baseExp": 104,
+    "growthRate": "medium",
+    "evolveTo": 15,
+    "evolveLevel": 34,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "ノーマルの ちからを あやつり、いせきに すんでいる。よる に なると かつどう する。",
+    "height": 2.1,
+    "weight": 24.4,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 2
+  },
+  {
+    "id": 15,
+    "name": "ヴモバーン",
+    "category": "きばモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 130,
+      "defense": 82,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 195,
+    "baseExp": 114,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "おにモンスター。ノーマルの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 2.1,
+    "weight": 108.0,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 9
+  },
+  {
+    "id": 16,
+    "name": "ボズッパ",
+    "category": "ふしぎモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 42,
+      "attack": 53,
+      "defense": 50,
+      "speed": 109,
+      "special": 56
+    },
+    "catchRate": 220,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 17,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "こだいから いきづく やみの せいれい。その ひたいには ふしぎな ちからが やどる。",
+    "height": 1.9,
+    "weight": 22.1,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 4
+  },
+  {
+    "id": 17,
+    "name": "グドテリオン",
+    "category": "ほのおモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 104,
+      "attack": 20,
+      "defense": 34,
+      "speed": 34,
+      "special": 130
+    },
+    "catchRate": 190,
+    "baseExp": 84,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "やみの ちからを あやつり、もりのおくに すんでいる。よる に なると かつどう する。",
+    "height": 2.5,
+    "weight": 9.6,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 11
+  },
+  {
+    "id": 18,
+    "name": "グキピ",
+    "category": "せいれいモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 33,
+      "attack": 20,
+      "defense": 88,
+      "speed": 104,
+      "special": 63
+    },
+    "catchRate": 120,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 19,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "とかげモンスター。どくの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.1,
+    "weight": 37.7,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 6
+  },
+  {
+    "id": 19,
+    "name": "ウララング",
+    "category": "うみモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 25,
+      "defense": 130,
+      "speed": 30,
+      "special": 93
+    },
+    "catchRate": 90,
+    "baseExp": 91,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "おにモンスター。どくの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 3.6,
+    "weight": 89.1,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 1
+  },
+  {
+    "id": 20,
+    "name": "ファパス",
+    "category": "いわやまモンスター",
+    "types": [
+      "いわ",
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 90,
+      "defense": 30,
+      "speed": 97,
+      "special": 62
+    },
+    "catchRate": 190,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 21,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 1
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "おくびょうで ぐんを なす。きけんを かんじると いわの ちからで みを まもる。",
+    "height": 2.3,
+    "weight": 20.6,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 8
+  },
+  {
+    "id": 21,
+    "name": "ガコクロス",
+    "category": "わかばモンスター",
+    "types": [
+      "いわ",
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 59,
+      "attack": 130,
+      "defense": 20,
+      "speed": 105,
+      "special": 41
+    },
+    "catchRate": 160,
+    "baseExp": 91,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 1
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "ゆうかんで ぐんを なす。きけんを かんじると いわの ちからで みを まもる。",
+    "height": 3.6,
+    "weight": 7.9,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 3
+  },
+  {
+    "id": 22,
+    "name": "ザジル",
+    "category": "きばモンスター",
+    "types": [
+      "でんき"
+    ],
+    "baseStats": {
+      "hp": 116,
+      "attack": 20,
+      "defense": 87,
+      "speed": 33,
+      "special": 58
+    },
+    "catchRate": 150,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 23,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 16
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 17
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 18
+      }
+    ],
+    "dexEntry": "でんきの ちからを あやつり、いせきに すんでいる。よる に なると かつどう する。",
+    "height": 1.9,
+    "weight": 24.3,
+    "isLegendary": false,
+    "spriteColor": "#F8D030",
+    "spriteColor2": "#F8D030",
+    "spriteShape": 10
+  },
+  {
+    "id": 23,
+    "name": "ドパドラ",
+    "category": "けんじゃモンスター",
+    "types": [
+      "でんき"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 52,
+      "defense": 29,
+      "speed": 130,
+      "special": 89
+    },
+    "catchRate": 120,
+    "baseExp": 106,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 16
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 17
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 18
+      }
+    ],
+    "dexEntry": "とても おくびょうな せいかくで しられる でんきタイプの モンスター。",
+    "height": 3.1,
+    "weight": 81.8,
+    "isLegendary": false,
+    "spriteColor": "#F8D030",
+    "spriteColor2": "#F8D030",
+    "spriteShape": 5
+  },
+  {
+    "id": 24,
+    "name": "ヴジム",
+    "category": "おにモンスター",
+    "types": [
+      "はがね",
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 66,
+      "attack": 20,
+      "defense": 51,
+      "speed": 72,
+      "special": 79
+    },
+    "catchRate": 120,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 25,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 7
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 38
+      }
+    ],
+    "dexEntry": "こだいから いきづく はがねの せいれい。その つばさには ふしぎな ちからが やどる。",
+    "height": 1.6,
+    "weight": 3.1,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 0
+  },
+  {
+    "id": 25,
+    "name": "ザニラング",
+    "category": "つばさモンスター",
+    "types": [
+      "はがね",
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 116,
+      "attack": 20,
+      "defense": 46,
+      "speed": 130,
+      "special": 130
+    },
+    "catchRate": 90,
+    "baseExp": 108,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 7
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 38
+      }
+    ],
+    "dexEntry": "とても がんこな せいかくで しられる はがねタイプの モンスター。",
+    "height": 4.1,
+    "weight": 51.6,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 7
+  },
+  {
+    "id": 26,
+    "name": "メバム",
+    "category": "わかばモンスター",
+    "types": [
+      "いわ",
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 63,
+      "defense": 63,
+      "speed": 64,
+      "special": 20
+    },
+    "catchRate": 150,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 27,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 7
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 20
+      }
+    ],
+    "dexEntry": "きばモンスター。いわの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.6,
+    "weight": 12.7,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 2
+  },
+  {
+    "id": 27,
+    "name": "ウズクロス",
+    "category": "いわやまモンスター",
+    "types": [
+      "いわ",
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 71,
+      "attack": 130,
+      "defense": 68,
+      "speed": 123,
+      "special": 60
+    },
+    "catchRate": 120,
+    "baseExp": 110,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 7
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 20
+      }
+    ],
+    "dexEntry": "やんちゃで ぐんを なす。きけんを かんじると いわの ちからで みを まもる。",
+    "height": 4.8,
+    "weight": 7.6,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 9
+  },
+  {
+    "id": 28,
+    "name": "リデン",
+    "category": "けんじゃモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 20,
+      "defense": 92,
+      "speed": 81,
+      "special": 54
+    },
+    "catchRate": 120,
+    "baseExp": 83,
+    "growthRate": "medium",
+    "evolveTo": 29,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "わかばモンスター。やみの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.0,
+    "weight": 50.2,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 4
+  },
+  {
+    "id": 29,
+    "name": "フメガルド",
+    "category": "ほのおモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 38,
+      "attack": 85,
+      "defense": 99,
+      "speed": 121,
+      "special": 101
+    },
+    "catchRate": 90,
+    "baseExp": 108,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "とても やんちゃな せいかくで しられる やみタイプの モンスター。",
+    "height": 1.9,
+    "weight": 58.2,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 11
+  },
+  {
+    "id": 30,
+    "name": "ピサン",
+    "category": "いわやまモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 73,
+      "attack": 20,
+      "defense": 85,
+      "speed": 48,
+      "special": 91
+    },
+    "catchRate": 150,
+    "baseExp": 83,
+    "growthRate": "medium",
+    "evolveTo": 31,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "ノーマルの ちからを あやつり、もりのおくに すんでいる。よる に なると かつどう する。",
+    "height": 1.7,
+    "weight": 55.1,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 6
+  },
+  {
+    "id": 31,
+    "name": "ファジドラ",
+    "category": "とかげモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 37,
+      "attack": 130,
+      "defense": 40,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 120,
+    "baseExp": 91,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "おくびょうで ぐんを なす。きけんを かんじると ノーマルの ちからで みを まもる。",
+    "height": 4.3,
+    "weight": 26.4,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 1
+  },
+  {
+    "id": 32,
+    "name": "ソジン",
+    "category": "けんじゃモンスター",
+    "types": [
+      "くさ",
+      "でんき"
+    ],
+    "baseStats": {
+      "hp": 41,
+      "attack": 38,
+      "defense": 65,
+      "speed": 67,
+      "special": 74
+    },
+    "catchRate": 120,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 33,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 13
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 16
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 14
+      }
+    ],
+    "dexEntry": "こだいから いきづく くさの せいれい。その むねには ふしぎな ちからが やどる。",
+    "height": 0.4,
+    "weight": 49.3,
+    "isLegendary": false,
+    "spriteColor": "#78C850",
+    "spriteColor2": "#F8D030",
+    "spriteShape": 8
+  },
+  {
+    "id": 33,
+    "name": "フノクロス",
+    "category": "よぞらモンスター",
+    "types": [
+      "くさ",
+      "でんき"
+    ],
+    "baseStats": {
+      "hp": 76,
+      "attack": 130,
+      "defense": 101,
+      "speed": 40,
+      "special": 85
+    },
+    "catchRate": 90,
+    "baseExp": 106,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 13
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 16
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 14
+      }
+    ],
+    "dexEntry": "くさの ちからを あやつり、もりのおくに すんでいる。よる に なると かつどう する。",
+    "height": 1.4,
+    "weight": 72.3,
+    "isLegendary": false,
+    "spriteColor": "#78C850",
+    "spriteColor2": "#F8D030",
+    "spriteShape": 3
+  },
+  {
+    "id": 34,
+    "name": "ガモピ",
+    "category": "けんじゃモンスター",
+    "types": [
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 49,
+      "attack": 31,
+      "defense": 69,
+      "speed": 75,
+      "special": 72
+    },
+    "catchRate": 150,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 35,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 8
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 9
+      }
+    ],
+    "dexEntry": "うみモンスター。ほのおの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.4,
+    "weight": 51.7,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 10
+  },
+  {
+    "id": 35,
+    "name": "ヴミドラ",
+    "category": "でんこうモンスター",
+    "types": [
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 89,
+      "attack": 121,
+      "defense": 67,
+      "speed": 86,
+      "special": 108
+    },
+    "catchRate": 120,
+    "baseExp": 114,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 8
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 9
+      }
+    ],
+    "dexEntry": "うみモンスター。ほのおの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 4.7,
+    "weight": 40.6,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 5
+  },
+  {
+    "id": 36,
+    "name": "ジキニョ",
+    "category": "ふしぎモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 63,
+      "attack": 58,
+      "defense": 50,
+      "speed": 70,
+      "special": 48
+    },
+    "catchRate": 120,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 37,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "とても がんこな せいかくで しられる いわタイプの モンスター。",
+    "height": 1.1,
+    "weight": 12.9,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 0
+  },
+  {
+    "id": 37,
+    "name": "ソデフィウス",
+    "category": "つばさモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 105,
+      "defense": 64,
+      "speed": 112,
+      "special": 100
+    },
+    "catchRate": 90,
+    "baseExp": 114,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "こだいから いきづく いわの せいれい。その ひたいには ふしぎな ちからが やどる。",
+    "height": 3.7,
+    "weight": 63.8,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 7
+  },
+  {
+    "id": 38,
+    "name": "ラミニョ",
+    "category": "わかばモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 86,
+      "defense": 82,
+      "speed": 87,
+      "special": 43
+    },
+    "catchRate": 190,
+    "baseExp": 83,
+    "growthRate": "medium",
+    "evolveTo": 39,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "とても おだやかな せいかくで しられる やみタイプの モンスター。",
+    "height": 0.4,
+    "weight": 36.5,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 2
+  },
+  {
+    "id": 39,
+    "name": "リガラング",
+    "category": "とかげモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 87,
+      "speed": 61,
+      "special": 84
+    },
+    "catchRate": 160,
+    "baseExp": 110,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "とても おくびょうな せいかくで しられる やみタイプの モンスター。",
+    "height": 4.6,
+    "weight": 62.6,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 9
+  },
+  {
+    "id": 40,
+    "name": "ラリム",
+    "category": "せいれいモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 20,
+      "defense": 92,
+      "speed": 102,
+      "special": 90
+    },
+    "catchRate": 120,
+    "baseExp": 84,
+    "growthRate": "medium",
+    "evolveTo": 41,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "こだいから いきづく いわの せいれい。その ツノには ふしぎな ちからが やどる。",
+    "height": 1.2,
+    "weight": 33.2,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 4
+  },
+  {
+    "id": 41,
+    "name": "モキフィウス",
+    "category": "せいれいモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 130,
+      "defense": 52,
+      "speed": 41,
+      "special": 79
+    },
+    "catchRate": 90,
+    "baseExp": 106,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "おだやかで ぐんを なす。きけんを かんじると いわの ちからで みを まもる。",
+    "height": 2.1,
+    "weight": 10.5,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 11
+  },
+  {
+    "id": 42,
+    "name": "ソズス",
+    "category": "みずべモンスター",
+    "types": [
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 62,
+      "defense": 97,
+      "speed": 43,
+      "special": 102
+    },
+    "catchRate": 120,
+    "baseExp": 84,
+    "growthRate": "medium",
+    "evolveTo": 43,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 13
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 14
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 15
+      }
+    ],
+    "dexEntry": "くさの ちからを あやつり、そうげんに すんでいる。よる に なると かつどう する。",
+    "height": 1.8,
+    "weight": 19.1,
+    "isLegendary": false,
+    "spriteColor": "#78C850",
+    "spriteColor2": "#78C850",
+    "spriteShape": 6
+  },
+  {
+    "id": 43,
+    "name": "ネニガルド",
+    "category": "みずべモンスター",
+    "types": [
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 112,
+      "defense": 78,
+      "speed": 60,
+      "special": 66
+    },
+    "catchRate": 90,
+    "baseExp": 109,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 13
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 14
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 15
+      }
+    ],
+    "dexEntry": "こだいから いきづく くさの せいれい。その つばさには ふしぎな ちからが やどる。",
+    "height": 1.3,
+    "weight": 98.0,
+    "isLegendary": false,
+    "spriteColor": "#78C850",
+    "spriteColor2": "#78C850",
+    "spriteShape": 1
+  },
+  {
+    "id": 44,
+    "name": "ヒポック",
+    "category": "ふしぎモンスター",
+    "types": [
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 79,
+      "attack": 71,
+      "defense": 47,
+      "speed": 64,
+      "special": 47
+    },
+    "catchRate": 220,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 45,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 29
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 30
+      }
+    ],
+    "dexEntry": "おだやかで ぐんを なす。きけんを かんじると こおりの ちからで みを まもる。",
+    "height": 2.3,
+    "weight": 12.7,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 8
+  },
+  {
+    "id": 45,
+    "name": "ソミレオン",
+    "category": "けんじゃモンスター",
+    "types": [
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 74,
+      "attack": 22,
+      "defense": 63,
+      "speed": 130,
+      "special": 130
+    },
+    "catchRate": 190,
+    "baseExp": 103,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 29
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 30
+      }
+    ],
+    "dexEntry": "れいせいで ぐんを なす。きけんを かんじると こおりの ちからで みを まもる。",
+    "height": 2.7,
+    "weight": 29.8,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 3
+  },
+  {
+    "id": 46,
+    "name": "ジズニョ",
+    "category": "ふしぎモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 86,
+      "attack": 66,
+      "defense": 72,
+      "speed": 48,
+      "special": 20
+    },
+    "catchRate": 190,
+    "baseExp": 78,
+    "growthRate": "medium",
+    "evolveTo": 47,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "みずべモンスター。いわの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.4,
+    "weight": 8.3,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 10
+  },
+  {
+    "id": 47,
+    "name": "モミギオス",
+    "category": "いわやまモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 113,
+      "defense": 48,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 160,
+    "baseExp": 93,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "うみモンスター。いわの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 4.5,
+    "weight": 70.5,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 5
+  },
+  {
+    "id": 48,
+    "name": "ベサン",
+    "category": "でんこうモンスター",
+    "types": [
+      "みず",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 43,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 120,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 49,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 11
+      }
+    ],
+    "dexEntry": "とても ゆうかんな せいかくで しられる みずタイプの モンスター。",
+    "height": 0.4,
+    "weight": 33.9,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 0
+  },
+  {
+    "id": 49,
+    "name": "クテクロス",
+    "category": "こだいモンスター",
+    "types": [
+      "みず",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 111,
+      "attack": 34,
+      "defense": 119,
+      "speed": 130,
+      "special": 55
+    },
+    "catchRate": 90,
+    "baseExp": 109,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 11
+      }
+    ],
+    "dexEntry": "とても おだやかな せいかくで しられる みずタイプの モンスター。",
+    "height": 2.5,
+    "weight": 14.5,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 7
+  },
+  {
+    "id": 50,
+    "name": "ララーノ",
+    "category": "とかげモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 117,
+      "defense": 72,
+      "speed": 21,
+      "special": 47
+    },
+    "catchRate": 220,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 51,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "とても やんちゃな せいかくで しられる やみタイプの モンスター。",
+    "height": 0.9,
+    "weight": 25.3,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 2
+  },
+  {
+    "id": 51,
+    "name": "ラデドラ",
+    "category": "でんこうモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 97,
+      "attack": 130,
+      "defense": 34,
+      "speed": 70,
+      "special": 130
+    },
+    "catchRate": 190,
+    "baseExp": 112,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "ゆうかんで ぐんを なす。きけんを かんじると やみの ちからで みを まもる。",
+    "height": 3.3,
+    "weight": 89.2,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 9
+  },
+  {
+    "id": 52,
+    "name": "ザルス",
+    "category": "よぞらモンスター",
+    "types": [
+      "でんき",
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 57,
+      "defense": 85,
+      "speed": 61,
+      "special": 75
+    },
+    "catchRate": 220,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 53,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 16
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 28
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 17
+      }
+    ],
+    "dexEntry": "とても やんちゃな せいかくで しられる でんきタイプの モンスター。",
+    "height": 1.1,
+    "weight": 46.6,
+    "isLegendary": false,
+    "spriteColor": "#F8D030",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 4
+  },
+  {
+    "id": 53,
+    "name": "ジポギオス",
+    "category": "ふしぎモンスター",
+    "types": [
+      "でんき",
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 113,
+      "attack": 129,
+      "defense": 108,
+      "speed": 70,
+      "special": 33
+    },
+    "catchRate": 190,
+    "baseExp": 110,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 16
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 28
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 17
+      }
+    ],
+    "dexEntry": "とても わんぱくな せいかくで しられる でんきタイプの モンスター。",
+    "height": 2.4,
+    "weight": 92.9,
+    "isLegendary": false,
+    "spriteColor": "#F8D030",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 11
+  },
+  {
+    "id": 54,
+    "name": "ボパム",
+    "category": "よぞらモンスター",
+    "types": [
+      "やみ",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 89,
+      "defense": 20,
+      "speed": 40,
+      "special": 73
+    },
+    "catchRate": 120,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 55,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 35
+      }
+    ],
+    "dexEntry": "どうくつモンスター。やみの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.3,
+    "weight": 24.0,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 6
+  },
+  {
+    "id": 55,
+    "name": "クリレオン",
+    "category": "おにモンスター",
+    "types": [
+      "やみ",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 101,
+      "defense": 130,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 90,
+    "baseExp": 100,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 35
+      }
+    ],
+    "dexEntry": "こだいから いきづく やみの せいれい。その しっぽには ふしぎな ちからが やどる。",
+    "height": 3.4,
+    "weight": 44.9,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 1
+  },
+  {
+    "id": 56,
+    "name": "ファゴーノ",
+    "category": "もりモンスター",
+    "types": [
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 72,
+      "defense": 25,
+      "speed": 51,
+      "special": 81
+    },
+    "catchRate": 190,
+    "baseExp": 76,
+    "growthRate": "medium",
+    "evolveTo": 57,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 23
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 24
+      }
+    ],
+    "dexEntry": "とても がんこな せいかくで しられる かぜタイプの モンスター。",
+    "height": 1.9,
+    "weight": 12.2,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 8
+  },
+  {
+    "id": 57,
+    "name": "ボゴレオン",
+    "category": "よぞらモンスター",
+    "types": [
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 105,
+      "attack": 34,
+      "defense": 95,
+      "speed": 123,
+      "special": 106
+    },
+    "catchRate": 160,
+    "baseExp": 112,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 23
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 24
+      }
+    ],
+    "dexEntry": "こだいから いきづく かぜの せいれい。その りょうてには ふしぎな ちからが やどる。",
+    "height": 1.6,
+    "weight": 82.0,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 3
+  },
+  {
+    "id": 58,
+    "name": "ソキニョ",
+    "category": "そうげんモンスター",
+    "types": [
+      "みず",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 57,
+      "attack": 20,
+      "defense": 119,
+      "speed": 61,
+      "special": 54
+    },
+    "catchRate": 150,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 59,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 11
+      }
+    ],
+    "dexEntry": "こだいから いきづく みずの せいれい。その りょうてには ふしぎな ちからが やどる。",
+    "height": 0.9,
+    "weight": 13.3,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 10
+  },
+  {
+    "id": 59,
+    "name": "ガゴフィウス",
+    "category": "うみモンスター",
+    "types": [
+      "みず",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 48,
+      "attack": 100,
+      "defense": 126,
+      "speed": 54,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 11
+      }
+    ],
+    "dexEntry": "とても おくびょうな せいかくで しられる みずタイプの モンスター。",
+    "height": 4.6,
+    "weight": 29.2,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 5
+  },
+  {
+    "id": 60,
+    "name": "ピパム",
+    "category": "つばさモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 83,
+      "defense": 56,
+      "speed": 118,
+      "special": 35
+    },
+    "catchRate": 150,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 61,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "おだやかで ぐんを なす。きけんを かんじると いわの ちからで みを まもる。",
+    "height": 0.7,
+    "weight": 5.6,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 0
+  },
+  {
+    "id": 61,
+    "name": "ピコドラ",
+    "category": "とかげモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 76,
+      "attack": 46,
+      "defense": 125,
+      "speed": 48,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 105,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "よぞらモンスター。いわの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.8,
+    "weight": 43.9,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 7
+  },
+  {
+    "id": 62,
+    "name": "ベジル",
+    "category": "こだいモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 91,
+      "speed": 95,
+      "special": 98
+    },
+    "catchRate": 120,
+    "baseExp": 85,
+    "growthRate": "medium",
+    "evolveTo": 63,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "よぞらモンスター。いわの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.5,
+    "weight": 27.6,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 2
+  },
+  {
+    "id": 63,
+    "name": "リテガス",
+    "category": "せいれいモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 119,
+      "defense": 20,
+      "speed": 130,
+      "special": 40
+    },
+    "catchRate": 90,
+    "baseExp": 107,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "こだいから いきづく いわの せいれい。その つばさには ふしぎな ちからが やどる。",
+    "height": 4.4,
+    "weight": 91.9,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 9
+  },
+  {
+    "id": 64,
+    "name": "シャノス",
+    "category": "とかげモンスター",
+    "types": [
+      "こおり",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 57,
+      "defense": 67,
+      "speed": 31,
+      "special": 94
+    },
+    "catchRate": 120,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 65,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "とても おくびょうな せいかくで しられる こおりタイプの モンスター。",
+    "height": 2.5,
+    "weight": 4.2,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 4
+  },
+  {
+    "id": 65,
+    "name": "ヌベガルド",
+    "category": "そうげんモンスター",
+    "types": [
+      "こおり",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 62,
+      "defense": 100,
+      "speed": 37,
+      "special": 130
+    },
+    "catchRate": 90,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "こおりの ちからを あやつり、いせきに すんでいる。よる に なると かつどう する。",
+    "height": 2.7,
+    "weight": 100.0,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 11
+  },
+  {
+    "id": 66,
+    "name": "シャベッパ",
+    "category": "わかばモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 69,
+      "attack": 82,
+      "defense": 20,
+      "speed": 67,
+      "special": 85
+    },
+    "catchRate": 190,
+    "baseExp": 84,
+    "growthRate": "medium",
+    "evolveTo": 67,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "やんちゃで ぐんを なす。きけんを かんじると ノーマルの ちからで みを まもる。",
+    "height": 1.1,
+    "weight": 6.8,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 6
+  },
+  {
+    "id": 67,
+    "name": "ドモニクス",
+    "category": "みずべモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 123,
+      "attack": 105,
+      "defense": 70,
+      "speed": 56,
+      "special": 102
+    },
+    "catchRate": 160,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "おだやかで ぐんを なす。きけんを かんじると ノーマルの ちからで みを まもる。",
+    "height": 2.1,
+    "weight": 35.8,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 1
+  },
+  {
+    "id": 68,
+    "name": "ヴズッパ",
+    "category": "わかばモンスター",
+    "types": [
+      "いわ",
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 39,
+      "attack": 56,
+      "defense": 88,
+      "speed": 111,
+      "special": 20
+    },
+    "catchRate": 190,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 69,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 1
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "いわの ちからを あやつり、もりのおくに すんでいる。よる に なると かつどう する。",
+    "height": 2.4,
+    "weight": 52.0,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 8
+  },
+  {
+    "id": 69,
+    "name": "ピメローグ",
+    "category": "おにモンスター",
+    "types": [
+      "いわ",
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 33,
+      "attack": 130,
+      "defense": 125,
+      "speed": 59,
+      "special": 96
+    },
+    "catchRate": 160,
+    "baseExp": 108,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 1
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "いわの ちからを あやつり、やまおくに すんでいる。よる に なると かつどう する。",
+    "height": 3.2,
+    "weight": 116.2,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 3
+  },
+  {
+    "id": 70,
+    "name": "ウルル",
+    "category": "せいれいモンスター",
+    "types": [
+      "ひかり",
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 79,
+      "defense": 89,
+      "speed": 72,
+      "special": 38
+    },
+    "catchRate": 220,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 71,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 19
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 32
+      }
+    ],
+    "dexEntry": "わかばモンスター。ひかりの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.6,
+    "weight": 42.7,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 10
+  },
+  {
+    "id": 71,
+    "name": "ウリドラ",
+    "category": "そうげんモンスター",
+    "types": [
+      "ひかり",
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 47,
+      "attack": 50,
+      "defense": 63,
+      "speed": 112,
+      "special": 130
+    },
+    "catchRate": 190,
+    "baseExp": 100,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 19
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 32
+      }
+    ],
+    "dexEntry": "こだいから いきづく ひかりの せいれい。その りょうてには ふしぎな ちからが やどる。",
+    "height": 3.8,
+    "weight": 32.4,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 5
+  },
+  {
+    "id": 72,
+    "name": "ガリミ",
+    "category": "ほのおモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 54,
+      "attack": 58,
+      "defense": 78,
+      "speed": 39,
+      "special": 58
+    },
+    "catchRate": 120,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 73,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "こだいから いきづく いわの せいれい。その りょうてには ふしぎな ちからが やどる。",
+    "height": 1.6,
+    "weight": 16.8,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 0
+  },
+  {
+    "id": 73,
+    "name": "ドコローグ",
+    "category": "いわやまモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 46,
+      "defense": 48,
+      "speed": 20,
+      "special": 130
+    },
+    "catchRate": 90,
+    "baseExp": 94,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "よぞらモンスター。いわの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 3.7,
+    "weight": 97.3,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 7
+  },
+  {
+    "id": 74,
+    "name": "クズム",
+    "category": "みずべモンスター",
+    "types": [
+      "でんき",
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 73,
+      "attack": 20,
+      "defense": 85,
+      "speed": 69,
+      "special": 58
+    },
+    "catchRate": 120,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 75,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 16
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 10
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 17
+      }
+    ],
+    "dexEntry": "こだいから いきづく でんきの せいれい。その ツノには ふしぎな ちからが やどる。",
+    "height": 1.0,
+    "weight": 33.8,
+    "isLegendary": false,
+    "spriteColor": "#F8D030",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 2
+  },
+  {
+    "id": 75,
+    "name": "チパドラ",
+    "category": "けんじゃモンスター",
+    "types": [
+      "でんき",
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 36,
+      "defense": 28,
+      "speed": 117,
+      "special": 130
+    },
+    "catchRate": 90,
+    "baseExp": 108,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 16
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 10
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 17
+      }
+    ],
+    "dexEntry": "とても おくびょうな せいかくで しられる でんきタイプの モンスター。",
+    "height": 3.7,
+    "weight": 55.5,
+    "isLegendary": false,
+    "spriteColor": "#F8D030",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 9
+  },
+  {
+    "id": 76,
+    "name": "ヴモス",
+    "category": "でんこうモンスター",
+    "types": [
+      "こおり",
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 69,
+      "defense": 53,
+      "speed": 71,
+      "special": 88
+    },
+    "catchRate": 220,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 77,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 31
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "でんこうモンスター。こおりの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.8,
+    "weight": 38.9,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 4
+  },
+  {
+    "id": 77,
+    "name": "チミガルド",
+    "category": "ふしぎモンスター",
+    "types": [
+      "こおり",
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 32,
+      "attack": 94,
+      "defense": 20,
+      "speed": 130,
+      "special": 130
+    },
+    "catchRate": 190,
+    "baseExp": 101,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 31
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "こおりの ちからを あやつり、かざんちかくに すんでいる。よる に なると かつどう する。",
+    "height": 1.0,
+    "weight": 35.3,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 11
+  },
+  {
+    "id": 78,
+    "name": "シャミーノ",
+    "category": "よぞらモンスター",
+    "types": [
+      "どく",
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 53,
+      "defense": 100,
+      "speed": 20,
+      "special": 22
+    },
+    "catchRate": 150,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 79,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 28
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 26
+      }
+    ],
+    "dexEntry": "こだいから いきづく どくの せいれい。その ひたいには ふしぎな ちからが やどる。",
+    "height": 1.0,
+    "weight": 19.0,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 6
+  },
+  {
+    "id": 79,
+    "name": "メポレオン",
+    "category": "みずべモンスター",
+    "types": [
+      "どく",
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 20,
+      "defense": 130,
+      "speed": 130,
+      "special": 82
+    },
+    "catchRate": 120,
+    "baseExp": 96,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 28
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 26
+      }
+    ],
+    "dexEntry": "とかげモンスター。どくの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 2.5,
+    "weight": 66.4,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 1
+  },
+  {
+    "id": 80,
+    "name": "ジメミ",
+    "category": "わかばモンスター",
+    "types": [
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 62,
+      "attack": 74,
+      "defense": 67,
+      "speed": 63,
+      "special": 35
+    },
+    "catchRate": 220,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 81,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 38
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 39
+      }
+    ],
+    "dexEntry": "こだいから いきづく はがねの せいれい。その つばさには ふしぎな ちからが やどる。",
+    "height": 0.5,
+    "weight": 3.3,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 8
+  },
+  {
+    "id": 81,
+    "name": "ベバニクス",
+    "category": "そうげんモンスター",
+    "types": [
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 106,
+      "defense": 46,
+      "speed": 20,
+      "special": 130
+    },
+    "catchRate": 190,
+    "baseExp": 106,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 38
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 39
+      }
+    ],
+    "dexEntry": "とても れいせいな せいかくで しられる はがねタイプの モンスター。",
+    "height": 2.3,
+    "weight": 30.8,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 3
+  },
+  {
+    "id": 82,
+    "name": "ヒバック",
+    "category": "せいれいモンスター",
+    "types": [
+      "ほのお",
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 102,
+      "attack": 59,
+      "defense": 61,
+      "speed": 20,
+      "special": 78
+    },
+    "catchRate": 150,
+    "baseExp": 84,
+    "growthRate": "medium",
+    "evolveTo": 83,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 37
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 8
+      }
+    ],
+    "dexEntry": "わんぱくで ぐんを なす。きけんを かんじると ほのおの ちからで みを まもる。",
+    "height": 1.7,
+    "weight": 42.7,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 10
+  },
+  {
+    "id": 83,
+    "name": "ウノザード",
+    "category": "わかばモンスター",
+    "types": [
+      "ほのお",
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 32,
+      "attack": 105,
+      "defense": 130,
+      "speed": 55,
+      "special": 118
+    },
+    "catchRate": 120,
+    "baseExp": 108,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 37
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 8
+      }
+    ],
+    "dexEntry": "せいれいモンスター。ほのおの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.6,
+    "weight": 70.6,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 5
+  },
+  {
+    "id": 84,
+    "name": "フミン",
+    "category": "せいれいモンスター",
+    "types": [
+      "みず",
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 42,
+      "attack": 79,
+      "defense": 20,
+      "speed": 94,
+      "special": 69
+    },
+    "catchRate": 120,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 85,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 37
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 11
+      }
+    ],
+    "dexEntry": "わかばモンスター。みずの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.3,
+    "weight": 5.1,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 0
+  },
+  {
+    "id": 85,
+    "name": "リキドラ",
+    "category": "せいれいモンスター",
+    "types": [
+      "みず",
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 130,
+      "defense": 130,
+      "speed": 104,
+      "special": 39
+    },
+    "catchRate": 90,
+    "baseExp": 104,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 37
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 11
+      }
+    ],
+    "dexEntry": "がんこで ぐんを なす。きけんを かんじると みずの ちからで みを まもる。",
+    "height": 1.4,
+    "weight": 58.3,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 7
+  },
+  {
+    "id": 86,
+    "name": "ヒメニョ",
+    "category": "けんじゃモンスター",
+    "types": [
+      "どく",
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 93,
+      "attack": 21,
+      "defense": 58,
+      "speed": 75,
+      "special": 39
+    },
+    "catchRate": 150,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 87,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 13
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 26
+      }
+    ],
+    "dexEntry": "どくの ちからを あやつり、みずべに すんでいる。よる に なると かつどう する。",
+    "height": 2.4,
+    "weight": 51.4,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#78C850",
+    "spriteShape": 2
+  },
+  {
+    "id": 87,
+    "name": "ウポガス",
+    "category": "わかばモンスター",
+    "types": [
+      "どく",
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 47,
+      "attack": 130,
+      "defense": 130,
+      "speed": 120,
+      "special": 24
+    },
+    "catchRate": 120,
+    "baseExp": 110,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 13
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 26
+      }
+    ],
+    "dexEntry": "どくの ちからを あやつり、やまおくに すんでいる。よる に なると かつどう する。",
+    "height": 4.4,
+    "weight": 103.9,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#78C850",
+    "spriteShape": 9
+  },
+  {
+    "id": 88,
+    "name": "フリン",
+    "category": "きばモンスター",
+    "types": [
+      "かぜ",
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 81,
+      "attack": 54,
+      "defense": 66,
+      "speed": 82,
+      "special": 20
+    },
+    "catchRate": 220,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 89,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 31
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 23
+      }
+    ],
+    "dexEntry": "ほのおモンスター。かぜの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.7,
+    "weight": 22.6,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 4
+  },
+  {
+    "id": 89,
+    "name": "シャノローグ",
+    "category": "こだいモンスター",
+    "types": [
+      "かぜ",
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 102,
+      "defense": 23,
+      "speed": 106,
+      "special": 130
+    },
+    "catchRate": 190,
+    "baseExp": 112,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 31
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 23
+      }
+    ],
+    "dexEntry": "こだいから いきづく かぜの せいれい。その ツノには ふしぎな ちからが やどる。",
+    "height": 4.7,
+    "weight": 17.2,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 11
+  },
+  {
+    "id": 90,
+    "name": "ピパン",
+    "category": "とかげモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 71,
+      "attack": 51,
+      "defense": 48,
+      "speed": 65,
+      "special": 72
+    },
+    "catchRate": 190,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 91,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "こだいから いきづく ひかりの せいれい。その つばさには ふしぎな ちからが やどる。",
+    "height": 0.3,
+    "weight": 9.9,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 6
+  },
+  {
+    "id": 91,
+    "name": "ヒモギオス",
+    "category": "でんこうモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 20,
+      "defense": 130,
+      "speed": 20,
+      "special": 130
+    },
+    "catchRate": 160,
+    "baseExp": 106,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "ひかりの ちからを あやつり、どうくつに すんでいる。よる に なると かつどう する。",
+    "height": 4.3,
+    "weight": 76.3,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 1
+  },
+  {
+    "id": 92,
+    "name": "ラパミ",
+    "category": "ほのおモンスター",
+    "types": [
+      "ノーマル",
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 67,
+      "attack": 62,
+      "defense": 37,
+      "speed": 106,
+      "special": 23
+    },
+    "catchRate": 120,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 93,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 34
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "こだいから いきづく ノーマルの せいれい。その しっぽには ふしぎな ちからが やどる。",
+    "height": 2.3,
+    "weight": 41.5,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#705848",
+    "spriteShape": 8
+  },
+  {
+    "id": 93,
+    "name": "ラジガルド",
+    "category": "わかばモンスター",
+    "types": [
+      "ノーマル",
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 46,
+      "defense": 95,
+      "speed": 91,
+      "special": 130
+    },
+    "catchRate": 90,
+    "baseExp": 110,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 34
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "がんこで ぐんを なす。きけんを かんじると ノーマルの ちからで みを まもる。",
+    "height": 4.1,
+    "weight": 22.0,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#705848",
+    "spriteShape": 3
+  },
+  {
+    "id": 94,
+    "name": "ドニーノ",
+    "category": "きばモンスター",
+    "types": [
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 20,
+      "defense": 92,
+      "speed": 34,
+      "special": 75
+    },
+    "catchRate": 150,
+    "baseExp": 83,
+    "growthRate": "medium",
+    "evolveTo": 95,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 29
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 30
+      }
+    ],
+    "dexEntry": "せいれいモンスター。こおりの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 2.4,
+    "weight": 43.9,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 10
+  },
+  {
+    "id": 95,
+    "name": "クパドン",
+    "category": "とかげモンスター",
+    "types": [
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 102,
+      "attack": 91,
+      "defense": 96,
+      "speed": 130,
+      "special": 35
+    },
+    "catchRate": 120,
+    "baseExp": 110,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 29
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 30
+      }
+    ],
+    "dexEntry": "きばモンスター。こおりの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 4.1,
+    "weight": 61.0,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 5
+  },
+  {
+    "id": 96,
+    "name": "クミル",
+    "category": "せいれいモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 72,
+      "attack": 58,
+      "defense": 78,
+      "speed": 46,
+      "special": 39
+    },
+    "catchRate": 190,
+    "baseExp": 78,
+    "growthRate": "medium",
+    "evolveTo": 97,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "こだいから いきづく どくの せいれい。その りょうてには ふしぎな ちからが やどる。",
+    "height": 0.9,
+    "weight": 26.0,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 0
+  },
+  {
+    "id": 97,
+    "name": "チミレオン",
+    "category": "きばモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 52,
+      "attack": 24,
+      "defense": 116,
+      "speed": 127,
+      "special": 130
+    },
+    "catchRate": 160,
+    "baseExp": 109,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "とても おだやかな せいかくで しられる どくタイプの モンスター。",
+    "height": 3.7,
+    "weight": 76.5,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 7
+  },
+  {
+    "id": 98,
+    "name": "ベベピ",
+    "category": "ほのおモンスター",
+    "types": [
+      "ノーマル",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 32,
+      "attack": 66,
+      "defense": 20,
+      "speed": 46,
+      "special": 130
+    },
+    "catchRate": 150,
+    "baseExp": 78,
+    "growthRate": "medium",
+    "evolveTo": 99,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "ノーマルの ちからを あやつり、かざんちかくに すんでいる。よる に なると かつどう する。",
+    "height": 2.0,
+    "weight": 32.7,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 2
+  },
+  {
+    "id": 99,
+    "name": "ベミクロス",
+    "category": "うみモンスター",
+    "types": [
+      "ノーマル",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 44,
+      "attack": 26,
+      "defense": 130,
+      "speed": 60,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 98,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "こだいから いきづく ノーマルの せいれい。その しっぽには ふしぎな ちからが やどる。",
+    "height": 0.7,
+    "weight": 114.6,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 9
+  },
+  {
+    "id": 100,
+    "name": "ソモッパ",
+    "category": "ほのおモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 56,
+      "attack": 87,
+      "defense": 20,
+      "speed": 30,
+      "special": 106
+    },
+    "catchRate": 120,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 101,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "がんこで ぐんを なす。きけんを かんじると いわの ちからで みを まもる。",
+    "height": 0.8,
+    "weight": 13.1,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 4
+  },
+  {
+    "id": 101,
+    "name": "ジルガス",
+    "category": "つばさモンスター",
+    "types": [
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 113,
+      "attack": 130,
+      "defense": 96,
+      "speed": 20,
+      "special": 106
+    },
+    "catchRate": 90,
+    "baseExp": 113,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 20
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 21
+      }
+    ],
+    "dexEntry": "とても れいせいな せいかくで しられる いわタイプの モンスター。",
+    "height": 4.1,
+    "weight": 67.8,
+    "isLegendary": false,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 11
+  },
+  {
+    "id": 102,
+    "name": "シャパッパ",
+    "category": "おにモンスター",
+    "types": [
+      "どく",
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 44,
+      "attack": 20,
+      "defense": 33,
+      "speed": 73,
+      "special": 130
+    },
+    "catchRate": 150,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 103,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 1
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "どくの ちからを あやつり、どうくつに すんでいる。よる に なると かつどう する。",
+    "height": 2.3,
+    "weight": 52.8,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 6
+  },
+  {
+    "id": 103,
+    "name": "ウメバーン",
+    "category": "みずべモンスター",
+    "types": [
+      "どく",
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 96,
+      "attack": 20,
+      "defense": 111,
+      "speed": 74,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 106,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 1
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "とても ゆうかんな せいかくで しられる どくタイプの モンスター。",
+    "height": 2.9,
+    "weight": 90.6,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 1
+  },
+  {
+    "id": 104,
+    "name": "グガス",
+    "category": "こだいモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 34,
+      "attack": 84,
+      "defense": 20,
+      "speed": 89,
+      "special": 77
+    },
+    "catchRate": 220,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 105,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "ノーマルの ちからを あやつり、いせきに すんでいる。よる に なると かつどう する。",
+    "height": 1.5,
+    "weight": 9.9,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 8
+  },
+  {
+    "id": 105,
+    "name": "リズテリオン",
+    "category": "おにモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 104,
+      "attack": 23,
+      "defense": 130,
+      "speed": 40,
+      "special": 35
+    },
+    "catchRate": 190,
+    "baseExp": 86,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "おだやかで ぐんを なす。きけんを かんじると ノーマルの ちからで みを まもる。",
+    "height": 2.3,
+    "weight": 117.7,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 3
+  },
+  {
+    "id": 106,
+    "name": "シャニッパ",
+    "category": "おにモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 124,
+      "attack": 20,
+      "defense": 20,
+      "speed": 20,
+      "special": 130
+    },
+    "catchRate": 220,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 107,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "とても わんぱくな せいかくで しられる どくタイプの モンスター。",
+    "height": 1.6,
+    "weight": 28.2,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 10
+  },
+  {
+    "id": 107,
+    "name": "シャリガス",
+    "category": "どうくつモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 115,
+      "attack": 130,
+      "defense": 27,
+      "speed": 130,
+      "special": 45
+    },
+    "catchRate": 190,
+    "baseExp": 109,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "ふしぎモンスター。どくの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 2.6,
+    "weight": 103.8,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 5
+  },
+  {
+    "id": 108,
+    "name": "グガーノ",
+    "category": "とかげモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 27,
+      "attack": 107,
+      "defense": 20,
+      "speed": 39,
+      "special": 95
+    },
+    "catchRate": 220,
+    "baseExp": 77,
+    "growthRate": "medium",
+    "evolveTo": 109,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "ゆうかんで ぐんを なす。きけんを かんじると どくの ちからで みを まもる。",
+    "height": 0.7,
+    "weight": 20.1,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 0
+  },
+  {
+    "id": 109,
+    "name": "ウラテリオン",
+    "category": "こだいモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 84,
+      "attack": 108,
+      "defense": 56,
+      "speed": 80,
+      "special": 127
+    },
+    "catchRate": 190,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "どくの ちからを あやつり、やまおくに すんでいる。よる に なると かつどう する。",
+    "height": 3.0,
+    "weight": 44.4,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 7
+  },
+  {
+    "id": 110,
+    "name": "メリン",
+    "category": "おにモンスター",
+    "types": [
+      "こおり",
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 44,
+      "attack": 30,
+      "defense": 68,
+      "speed": 66,
+      "special": 82
+    },
+    "catchRate": 150,
+    "baseExp": 78,
+    "growthRate": "medium",
+    "evolveTo": 111,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 10
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "ゆうかんで ぐんを なす。きけんを かんじると こおりの ちからで みを まもる。",
+    "height": 1.7,
+    "weight": 17.2,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 2
+  },
+  {
+    "id": 111,
+    "name": "リルフィウス",
+    "category": "ふしぎモンスター",
+    "types": [
+      "こおり",
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 124,
+      "attack": 130,
+      "defense": 94,
+      "speed": 92,
+      "special": 20
+    },
+    "catchRate": 120,
+    "baseExp": 112,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 10
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "れいせいで ぐんを なす。きけんを かんじると こおりの ちからで みを まもる。",
+    "height": 4.7,
+    "weight": 81.5,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 9
+  },
+  {
+    "id": 112,
+    "name": "ベメス",
+    "category": "もりモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 54,
+      "attack": 82,
+      "defense": 20,
+      "speed": 68,
+      "special": 72
+    },
+    "catchRate": 150,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 113,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "とかげモンスター。どくの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 2.3,
+    "weight": 54.5,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 4
+  },
+  {
+    "id": 113,
+    "name": "ウミガス",
+    "category": "とかげモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 115,
+      "defense": 97,
+      "speed": 52,
+      "special": 114
+    },
+    "catchRate": 120,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "こだいから いきづく どくの せいれい。その むねには ふしぎな ちからが やどる。",
+    "height": 3.9,
+    "weight": 106.5,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 11
+  },
+  {
+    "id": 114,
+    "name": "ベリック",
+    "category": "どうくつモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 89,
+      "defense": 71,
+      "speed": 68,
+      "special": 38
+    },
+    "catchRate": 150,
+    "baseExp": 82,
+    "growthRate": "medium",
+    "evolveTo": 115,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "おだやかで ぐんを なす。きけんを かんじると ひかりの ちからで みを まもる。",
+    "height": 0.3,
+    "weight": 59.9,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 6
+  },
+  {
+    "id": 115,
+    "name": "クガクロス",
+    "category": "みずべモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 23,
+      "attack": 20,
+      "defense": 130,
+      "speed": 100,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 100,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "けんじゃモンスター。ひかりの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 4.1,
+    "weight": 21.2,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 1
+  },
+  {
+    "id": 116,
+    "name": "ガバス",
+    "category": "うみモンスター",
+    "types": [
+      "こおり",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 52,
+      "attack": 82,
+      "defense": 20,
+      "speed": 29,
+      "special": 114
+    },
+    "catchRate": 120,
+    "baseExp": 79,
+    "growthRate": "medium",
+    "evolveTo": 117,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "こだいから いきづく こおりの せいれい。その しっぽには ふしぎな ちからが やどる。",
+    "height": 0.5,
+    "weight": 36.2,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 8
+  },
+  {
+    "id": 117,
+    "name": "リメローグ",
+    "category": "よぞらモンスター",
+    "types": [
+      "こおり",
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 27,
+      "attack": 130,
+      "defense": 23,
+      "speed": 71,
+      "special": 130
+    },
+    "catchRate": 90,
+    "baseExp": 96,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 22
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "こおりの ちからを あやつり、どうくつに すんでいる。よる に なると かつどう する。",
+    "height": 3.7,
+    "weight": 81.7,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 3
+  },
+  {
+    "id": 118,
+    "name": "ラノス",
+    "category": "ほのおモンスター",
+    "types": [
+      "こおり",
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 79,
+      "attack": 64,
+      "defense": 102,
+      "speed": 39,
+      "special": 20
+    },
+    "catchRate": 150,
+    "baseExp": 80,
+    "growthRate": "medium",
+    "evolveTo": 119,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 7
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "とても おだやかな せいかくで しられる こおりタイプの モンスター。",
+    "height": 2.1,
+    "weight": 12.3,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 10
+  },
+  {
+    "id": 119,
+    "name": "ソベバーン",
+    "category": "ほのおモンスター",
+    "types": [
+      "こおり",
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 67,
+      "defense": 20,
+      "speed": 130,
+      "special": 50
+    },
+    "catchRate": 120,
+    "baseExp": 99,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 7
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "がんこで ぐんを なす。きけんを かんじると こおりの ちからで みを まもる。",
+    "height": 1.2,
+    "weight": 100.4,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 5
+  },
+  {
+    "id": 120,
+    "name": "ヒメーノ",
+    "category": "もりモンスター",
+    "types": [
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 37,
+      "attack": 130,
+      "defense": 82,
+      "speed": 20,
+      "special": 37
+    },
+    "catchRate": 190,
+    "baseExp": 81,
+    "growthRate": "medium",
+    "evolveTo": 121,
+    "evolveLevel": 16,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 23
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 24
+      }
+    ],
+    "dexEntry": "がんこで ぐんを なす。きけんを かんじると かぜの ちからで みを まもる。",
+    "height": 0.8,
+    "weight": 56.3,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 0
+  },
+  {
+    "id": 121,
+    "name": "グニザード",
+    "category": "いわやまモンスター",
+    "types": [
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 75,
+      "defense": 20,
+      "speed": 127,
+      "special": 20
+    },
+    "catchRate": 160,
+    "baseExp": 94,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 23
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 24
+      }
+    ],
+    "dexEntry": "かぜの ちからを あやつり、もりのおくに すんでいる。よる に なると かつどう する。",
+    "height": 2.1,
+    "weight": 38.2,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 7
+  },
+  {
+    "id": 122,
+    "name": "ファゴン",
+    "category": "けんじゃモンスター",
+    "types": [
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 37,
+      "defense": 130,
+      "speed": 103,
+      "special": 114
+    },
+    "catchRate": 120,
+    "baseExp": 107,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 8
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 9
+      }
+    ],
+    "dexEntry": "もりモンスター。ほのおの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.7,
+    "weight": 9.6,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 2
+  },
+  {
+    "id": 123,
+    "name": "ヌバーノ",
+    "category": "みずべモンスター",
+    "types": [
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 86,
+      "attack": 116,
+      "defense": 88,
+      "speed": 107,
+      "special": 77
+    },
+    "catchRate": 90,
+    "baseExp": 114,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 23
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 24
+      }
+    ],
+    "dexEntry": "とても がんこな せいかくで しられる かぜタイプの モンスター。",
+    "height": 0.4,
+    "weight": 47.3,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 9
+  },
+  {
+    "id": 124,
+    "name": "ガラル",
+    "category": "とかげモンスター",
+    "types": [
+      "ノーマル",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 41,
+      "attack": 130,
+      "defense": 121,
+      "speed": 65,
+      "special": 98
+    },
+    "catchRate": 150,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "わんぱくで ぐんを なす。きけんを かんじると ノーマルの ちからで みを まもる。",
+    "height": 1.4,
+    "weight": 40.0,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 4
+  },
+  {
+    "id": 125,
+    "name": "ヴニック",
+    "category": "きばモンスター",
+    "types": [
+      "かぜ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 46,
+      "defense": 20,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 120,
+    "baseExp": 89,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 23
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 24
+      }
+    ],
+    "dexEntry": "ふしぎモンスター。かぜの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 0.6,
+    "weight": 27.7,
+    "isLegendary": false,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#A0E0E0",
+    "spriteShape": 11
+  },
+  {
+    "id": 126,
+    "name": "ヒドム",
+    "category": "どうくつモンスター",
+    "types": [
+      "やみ",
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 87,
+      "attack": 130,
+      "defense": 60,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 90,
+    "baseExp": 105,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 19
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 35
+      }
+    ],
+    "dexEntry": "そうげんモンスター。やみの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 2.1,
+    "weight": 21.4,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 6
+  },
+  {
+    "id": 127,
+    "name": "シャズーノ",
+    "category": "いわやまモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 130,
+      "defense": 21,
+      "speed": 97,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "こだいから いきづく ひかりの せいれい。その りょうてには ふしぎな ちからが やどる。",
+    "height": 0.9,
+    "weight": 8.3,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 1
+  },
+  {
+    "id": 128,
+    "name": "グコス",
+    "category": "うみモンスター",
+    "types": [
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 41,
+      "attack": 40,
+      "defense": 130,
+      "speed": 107,
+      "special": 130
+    },
+    "catchRate": 150,
+    "baseExp": 109,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 7
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 8
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 9
+      }
+    ],
+    "dexEntry": "こだいから いきづく ほのおの せいれい。その つばさには ふしぎな ちからが やどる。",
+    "height": 2.1,
+    "weight": 58.5,
+    "isLegendary": false,
+    "spriteColor": "#F0803C",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 8
+  },
+  {
+    "id": 129,
+    "name": "ボリピ",
+    "category": "もりモンスター",
+    "types": [
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 130,
+      "defense": 74,
+      "speed": 20,
+      "special": 106
+    },
+    "catchRate": 90,
+    "baseExp": 112,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 38
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 39
+      }
+    ],
+    "dexEntry": "ゆうかんで ぐんを なす。きけんを かんじると はがねの ちからで みを まもる。",
+    "height": 1.6,
+    "weight": 22.8,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 3
+  },
+  {
+    "id": 130,
+    "name": "チサル",
+    "category": "いわやまモンスター",
+    "types": [
+      "こおり",
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 104,
+      "attack": 126,
+      "defense": 38,
+      "speed": 124,
+      "special": 73
+    },
+    "catchRate": 90,
+    "baseExp": 113,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 28
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 13
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 29
+      }
+    ],
+    "dexEntry": "とかげモンスター。こおりの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.2,
+    "weight": 52.8,
+    "isLegendary": false,
+    "spriteColor": "#98D8D8",
+    "spriteColor2": "#78C850",
+    "spriteShape": 10
+  },
+  {
+    "id": 131,
+    "name": "チモム",
+    "category": "どうくつモンスター",
+    "types": [
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 99,
+      "defense": 82,
+      "speed": 85,
+      "special": 64
+    },
+    "catchRate": 150,
+    "baseExp": 112,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 11
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 12
+      }
+    ],
+    "dexEntry": "どうくつモンスター。みずの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.2,
+    "weight": 6.7,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 5
+  },
+  {
+    "id": 132,
+    "name": "リバス",
+    "category": "そうげんモンスター",
+    "types": [
+      "ノーマル",
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 127,
+      "defense": 117,
+      "speed": 59,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 110,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 31
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "とても れいせいな せいかくで しられる ノーマルタイプの モンスター。",
+    "height": 1.3,
+    "weight": 55.9,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 0
+  },
+  {
+    "id": 133,
+    "name": "ヌゴッパ",
+    "category": "いわやまモンスター",
+    "types": [
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 38,
+      "defense": 120,
+      "speed": 20,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 99,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 38
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 39
+      }
+    ],
+    "dexEntry": "はがねの ちからを あやつり、どうくつに すんでいる。よる に なると かつどう する。",
+    "height": 1.0,
+    "weight": 16.0,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 7
+  },
+  {
+    "id": 134,
+    "name": "チゴミ",
+    "category": "わかばモンスター",
+    "types": [
+      "でんき"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 130,
+      "defense": 41,
+      "speed": 79,
+      "special": 30
+    },
+    "catchRate": 150,
+    "baseExp": 102,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 16
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 17
+      },
+      {
+        "level": 23,
+        "move": 41
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 18
+      }
+    ],
+    "dexEntry": "こだいから いきづく でんきの せいれい。その つばさには ふしぎな ちからが やどる。",
+    "height": 1.6,
+    "weight": 49.3,
+    "isLegendary": false,
+    "spriteColor": "#F8D030",
+    "spriteColor2": "#F8D030",
+    "spriteShape": 2
+  },
+  {
+    "id": 135,
+    "name": "ボサック",
+    "category": "せいれいモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 113,
+      "attack": 129,
+      "defense": 20,
+      "speed": 90,
+      "special": 130
+    },
+    "catchRate": 120,
+    "baseExp": 116,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "こだいから いきづく ひかりの せいれい。その りょうてには ふしぎな ちからが やどる。",
+    "height": 2.4,
+    "weight": 12.6,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 9
+  },
+  {
+    "id": 136,
+    "name": "ピテック",
+    "category": "ほのおモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 51,
+      "defense": 130,
+      "speed": 130,
+      "special": 25
+    },
+    "catchRate": 150,
+    "baseExp": 91,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "とても がんこな せいかくで しられる ひかりタイプの モンスター。",
+    "height": 1.6,
+    "weight": 43.9,
+    "isLegendary": false,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 4
+  },
+  {
+    "id": 137,
+    "name": "クテッパ",
+    "category": "どうくつモンスター",
+    "types": [
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 63,
+      "attack": 130,
+      "defense": 64,
+      "speed": 126,
+      "special": 52
+    },
+    "catchRate": 120,
+    "baseExp": 107,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 2
+      },
+      {
+        "level": 23,
+        "move": 6
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 3
+      }
+    ],
+    "dexEntry": "ノーマルの ちからを あやつり、どうくつに すんでいる。よる に なると かつどう する。",
+    "height": 1.0,
+    "weight": 36.8,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 11
+  },
+  {
+    "id": 138,
+    "name": "ネズン",
+    "category": "そうげんモンスター",
+    "types": [
+      "ノーマル",
+      "はがね"
+    ],
+    "baseStats": {
+      "hp": 101,
+      "attack": 112,
+      "defense": 107,
+      "speed": 63,
+      "special": 113
+    },
+    "catchRate": 150,
+    "baseExp": 119,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 1
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 37
+      },
+      {
+        "level": 23,
+        "move": 5
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "よぞらモンスター。ノーマルの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 2.3,
+    "weight": 5.8,
+    "isLegendary": false,
+    "spriteColor": "#A8A878",
+    "spriteColor2": "#B8B8D0",
+    "spriteShape": 6
+  },
+  {
+    "id": 139,
+    "name": "クラム",
+    "category": "もりモンスター",
+    "types": [
+      "はがね",
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 57,
+      "attack": 20,
+      "defense": 104,
+      "speed": 130,
+      "special": 124
+    },
+    "catchRate": 150,
+    "baseExp": 107,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 19
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 38
+      }
+    ],
+    "dexEntry": "とても ゆうかんな せいかくで しられる はがねタイプの モンスター。",
+    "height": 1.8,
+    "weight": 7.8,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 1
+  },
+  {
+    "id": 140,
+    "name": "ヒリル",
+    "category": "でんこうモンスター",
+    "types": [
+      "やみ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 24,
+      "defense": 130,
+      "speed": 130,
+      "special": 41
+    },
+    "catchRate": 90,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 34
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 35
+      },
+      {
+        "level": 23,
+        "move": 42
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 36
+      }
+    ],
+    "dexEntry": "やみの ちからを あやつり、もりのおくに すんでいる。よる に なると かつどう する。",
+    "height": 1.4,
+    "weight": 27.9,
+    "isLegendary": false,
+    "spriteColor": "#705848",
+    "spriteColor2": "#705848",
+    "spriteShape": 8
+  },
+  {
+    "id": 141,
+    "name": "フデピ",
+    "category": "みずべモンスター",
+    "types": [
+      "はがね",
+      "ほのお"
+    ],
+    "baseStats": {
+      "hp": 93,
+      "attack": 116,
+      "defense": 98,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 90,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 37
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 7
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 38
+      }
+    ],
+    "dexEntry": "とても わんぱくな せいかくで しられる はがねタイプの モンスター。",
+    "height": 2.5,
+    "weight": 52.7,
+    "isLegendary": false,
+    "spriteColor": "#B8B8D0",
+    "spriteColor2": "#F0803C",
+    "spriteShape": 3
+  },
+  {
+    "id": 142,
+    "name": "ザジム",
+    "category": "ほのおモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 130,
+      "defense": 67,
+      "speed": 36,
+      "special": 78
+    },
+    "catchRate": 150,
+    "baseExp": 102,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "こだいから いきづく どくの せいれい。その しっぽには ふしぎな ちからが やどる。",
+    "height": 1.3,
+    "weight": 5.5,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 10
+  },
+  {
+    "id": 143,
+    "name": "ドミル",
+    "category": "ほのおモンスター",
+    "types": [
+      "みず",
+      "いわ"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 106,
+      "defense": 73,
+      "speed": 20,
+      "special": 130
+    },
+    "catchRate": 150,
+    "baseExp": 104,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 19
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 11
+      }
+    ],
+    "dexEntry": "みずの ちからを あやつり、かざんちかくに すんでいる。よる に なると かつどう する。",
+    "height": 0.8,
+    "weight": 5.4,
+    "isLegendary": false,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#B8A038",
+    "spriteShape": 5
+  },
+  {
+    "id": 144,
+    "name": "グジニョ",
+    "category": "おにモンスター",
+    "types": [
+      "どく",
+      "ノーマル"
+    ],
+    "baseStats": {
+      "hp": 87,
+      "attack": 50,
+      "defense": 130,
+      "speed": 58,
+      "special": 130
+    },
+    "catchRate": 90,
+    "baseExp": 111,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 1
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 2
+      }
+    ],
+    "dexEntry": "とても れいせいな せいかくで しられる どくタイプの モンスター。",
+    "height": 1.6,
+    "weight": 11.4,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A8A878",
+    "spriteShape": 0
+  },
+  {
+    "id": 145,
+    "name": "ネモム",
+    "category": "きばモンスター",
+    "types": [
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 130,
+      "defense": 117,
+      "speed": 22,
+      "special": 20
+    },
+    "catchRate": 150,
+    "baseExp": 103,
+    "growthRate": "medium",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 26
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 27
+      }
+    ],
+    "dexEntry": "ふしぎモンスター。どくの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.2,
+    "weight": 57.5,
+    "isLegendary": false,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 7
+  },
+  {
+    "id": 146,
+    "name": "ザデッパ",
+    "category": "わかばモンスター",
+    "types": [
+      "いわ",
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 59,
+      "attack": 130,
+      "defense": 130,
+      "speed": 65,
+      "special": 130
+    },
+    "catchRate": 3,
+    "baseExp": 122,
+    "growthRate": "slow",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 19
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 13
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 20
+      }
+    ],
+    "dexEntry": "とても やんちゃな せいかくで しられる いわタイプの モンスター。",
+    "height": 2.3,
+    "weight": 39.4,
+    "isLegendary": true,
+    "spriteColor": "#B8A038",
+    "spriteColor2": "#78C850",
+    "spriteShape": 2
+  },
+  {
+    "id": 147,
+    "name": "グノッパ",
+    "category": "けんじゃモンスター",
+    "types": [
+      "みず"
+    ],
+    "baseStats": {
+      "hp": 34,
+      "attack": 130,
+      "defense": 130,
+      "speed": 130,
+      "special": 51
+    },
+    "catchRate": 3,
+    "baseExp": 115,
+    "growthRate": "slow",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 10
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 11
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 12
+      }
+    ],
+    "dexEntry": "みずの ちからを あやつり、そうげんに すんでいる。よる に なると かつどう する。",
+    "height": 0.5,
+    "weight": 12.3,
+    "isLegendary": true,
+    "spriteColor": "#6890F0",
+    "spriteColor2": "#6890F0",
+    "spriteShape": 9
+  },
+  {
+    "id": 148,
+    "name": "ヴサム",
+    "category": "ふしぎモンスター",
+    "types": [
+      "ひかり",
+      "どく"
+    ],
+    "baseStats": {
+      "hp": 63,
+      "attack": 130,
+      "defense": 130,
+      "speed": 126,
+      "special": 41
+    },
+    "catchRate": 3,
+    "baseExp": 118,
+    "growthRate": "slow",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 25
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 32
+      }
+    ],
+    "dexEntry": "ひかりの ちからを あやつり、どうくつに すんでいる。よる に なると かつどう する。",
+    "height": 2.1,
+    "weight": 52.1,
+    "isLegendary": true,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#A040A0",
+    "spriteShape": 4
+  },
+  {
+    "id": 149,
+    "name": "ソモム",
+    "category": "おにモンスター",
+    "types": [
+      "かぜ",
+      "こおり"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 130,
+      "defense": 38,
+      "speed": 130,
+      "special": 130
+    },
+    "catchRate": 3,
+    "baseExp": 118,
+    "growthRate": "slow",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 22
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 28
+      },
+      {
+        "level": 23,
+        "move": 43
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 23
+      }
+    ],
+    "dexEntry": "とても がんこな せいかくで しられる かぜタイプの モンスター。",
+    "height": 1.7,
+    "weight": 47.3,
+    "isLegendary": true,
+    "spriteColor": "#A0E0E0",
+    "spriteColor2": "#98D8D8",
+    "spriteShape": 11
+  },
+  {
+    "id": 150,
+    "name": "ヌメニョ",
+    "category": "つばさモンスター",
+    "types": [
+      "ひかり"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 130,
+      "defense": 52,
+      "speed": 130,
+      "special": 20
+    },
+    "catchRate": 3,
+    "baseExp": 112,
+    "growthRate": "slow",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 31
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 32
+      },
+      {
+        "level": 23,
+        "move": 4
+      },
+      {
+        "level": 29,
+        "move": 33
+      }
+    ],
+    "dexEntry": "こだいから いきづく ひかりの せいれい。その ツノには ふしぎな ちからが やどる。",
+    "height": 0.4,
+    "weight": 22.7,
+    "isLegendary": true,
+    "spriteColor": "#F8F0A0",
+    "spriteColor2": "#F8F0A0",
+    "spriteShape": 6
+  },
+  {
+    "id": 151,
+    "name": "メテピ",
+    "category": "そうげんモンスター",
+    "types": [
+      "どく",
+      "くさ"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 130,
+      "defense": 40,
+      "speed": 39,
+      "special": 117
+    },
+    "catchRate": 3,
+    "baseExp": 111,
+    "growthRate": "slow",
+    "evolveTo": null,
+    "evolveLevel": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": 1
+      },
+      {
+        "level": 5,
+        "move": 25
+      },
+      {
+        "level": 11,
+        "move": 2
+      },
+      {
+        "level": 16,
+        "move": 13
+      },
+      {
+        "level": 23,
+        "move": 40
+      },
+      {
+        "level": 29,
+        "move": 4
+      },
+      {
+        "level": 35,
+        "move": 26
+      }
+    ],
+    "dexEntry": "そうげんモンスター。どくの エネルギーを たくわえ、なかまを まもる ために たたかう。",
+    "height": 1.6,
+    "weight": 7.8,
+    "isLegendary": true,
+    "spriteColor": "#A040A0",
+    "spriteColor2": "#78C850",
+    "spriteShape": 1
+  }
+]
